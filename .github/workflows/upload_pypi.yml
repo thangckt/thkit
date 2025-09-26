@@ -1,7 +1,8 @@
 ### REF: https://github.com/pypa/gh-action-pypi-publish
-# https://github.com/pypa/cibuildwheel/blob/main/examples/github-deploy.yml
+### https://github.com/pypa/cibuildwheel/blob/main/examples/github-deploy.yml
+### This action upload the wheel to PyPI every push
 
-name: Upload wheel file to PyPI
+name: upload_wheel_to_PyPI
 
 on:
   push:
@@ -23,4 +24,5 @@ jobs:
       - uses: pypa/gh-action-pypi-publish@release/v1
         # with:
           # To test: repository-url: https://test.pypi.org/legacy/
+
           # path: dist/

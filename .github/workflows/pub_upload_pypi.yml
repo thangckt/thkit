@@ -23,9 +23,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          # To test: repository-url: https://test.pypi.org/legacy/
-          # path: dist/
-
-
-
+        # with:
+        #   To test: repository-url: https://test.pypi.org/legacy/
+        #   path: dist/

@@ -1,0 +1,2782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="C.Thang Nguyen">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../config/">
+      
+      
+      <link rel="icon" href="../1images/one-note-128-o.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>jobman - thkit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.279655fc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../_extra_theme/extra_css/full_width.css">
+    
+      <link rel="stylesheet" href="../_extra_theme/extra_css/font_size.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-QM7DWGY7ZT"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-QM7DWGY7ZT",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-QM7DWGY7ZT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#jobman-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="thkit" class="md-header__button md-logo" aria-label="thkit" data-md-component="logo">
+      
+  <img src="../1images/one-note-128-o.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            thkit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              jobman
+            
+          </span>
+        </div>
+      </div>
+    </div>
+      
+        
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io" class="md-tabs__link">
+        
+  
+  
+    
+  
+  home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/alff_doc" class="md-tabs__link">
+        
+  
+  
+    
+  
+  alff
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  thkit
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/asext" class="md-tabs__link">
+        
+  
+  
+    
+  
+  asext
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/thmd_doc" class="md-tabs__link">
+        
+  
+  
+    
+  
+  thmd
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/thml_doc" class="md-tabs__link">
+        
+  
+  
+    
+  
+  thml
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/molbuilder" class="md-tabs__link">
+        
+  
+  
+    
+  
+  molbuilder
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/cluster" class="md-tabs__link">
+        
+  
+  
+    
+  
+  hpc
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/ref" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ref
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/odd" class="md-tabs__link">
+        
+  
+  
+    
+  
+  odd
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/tv" class="md-tabs__link">
+        
+  
+  
+    
+  
+  tv
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/blog" class="md-tabs__link">
+        
+  
+  
+    
+  
+  blog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="http://thangckt.github.io/email" class="md-tabs__link">
+        
+  
+  
+    
+  
+  email
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="thkit" class="md-nav__button md-logo" aria-label="thkit" data-md-component="logo">
+      
+  <img src="../1images/one-note-128-o.png" alt="logo">
+
+    </a>
+    thkit
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/alff_doc" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    alff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    thkit
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            thkit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    jobman
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    jobman
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#case-1-distribute-jobs-to-a-single-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1: Distribute jobs to a single remote machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-2-distribute-jobs-to-multiple-remote-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2: Distribute jobs to multiple remote machines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Reference:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thkit.jobman" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;jobman
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" jobman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;#retired_code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" #retired_code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.runvar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;runvar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.global_lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;global_lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.async_submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.async_submit_job_chunk_tqdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk_tqdm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;helper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" helper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.change_logpath_dispatcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logpath_dispatcher
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.init_jobman_logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;init_jobman_logger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.remote_info" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;remote_info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.validate_machine_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;validate_machine_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.check_remote_connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;check_remote_connection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.loadconfig_multi_machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;loadconfig_multi_machines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;submit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" submit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.sync_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;sync_dict
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.global_lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;global_lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.async_submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.alff_submit_job_multi_remotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;alff_submit_job_multi_remotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    config
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    io
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    path
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pkg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    pkg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stuff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    stuff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Schema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_doc/config_remotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Schema for remote machines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/asext" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    asext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/thmd_doc" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    thmd
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/thml_doc" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    thml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/molbuilder" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    molbuilder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/cluster" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    hpc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/ref" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ref
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/odd" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    odd
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/tv" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    tv
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/blog" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http://thangckt.github.io/email" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    email
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#case-1-distribute-jobs-to-a-single-remote-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1: Distribute jobs to a single remote machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-2-distribute-jobs-to-multiple-remote-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2: Distribute jobs to multiple remote machines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Reference:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thkit.jobman" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;jobman
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" jobman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;#retired_code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" #retired_code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.runvar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;runvar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.global_lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;global_lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.async_submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.#retired_code.async_submit_job_chunk_tqdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk_tqdm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;helper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" helper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.change_logpath_dispatcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logpath_dispatcher
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.init_jobman_logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;init_jobman_logger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.remote_info" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;remote_info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.validate_machine_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;validate_machine_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.check_remote_connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;check_remote_connection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.helper.loadconfig_multi_machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;loadconfig_multi_machines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;submit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" submit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.sync_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;sync_dict
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.global_lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;global_lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.async_submit_job_chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;async_submit_job_chunk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.jobman.submit.alff_submit_job_multi_remotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;alff_submit_job_multi_remotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="jobman-documentation">Jobman documentation<a class="headerlink" href="#jobman-documentation" title="Permanent link">&para;</a></h1>
+<p><code>jobman</code> is a job management package designed to submit and monitor jobs on remote machines. It is built on the top of the <a href="https://docs.deepmodeling.com/projects/dpdispatcher">dpdispatcher</a> package.</p>
+<p><code>jobman</code> is designed for the big data era, where the number of remoted jobs is large that handling them manually is almost impossible. Imaging that you have more than 1000 jobs to run, you have access to 3 remote high-performance computing (HPC) serves with different computing environment, and you need to monitor the progress of each job, check the output files, and download the results. This is a tedious and time-consuming task. The <code>jobman</code> package is designed to automate such tasks. <code>jobman</code> will handle the input files, submit the jobs to remote machines, monitor the progress of each job, and download the results to the local machine whenever jobs finished.</p>
+<h2 id="case-1-distribute-jobs-to-a-single-remote-machine">Case 1: Distribute jobs to a single remote machine<a class="headerlink" href="#case-1-distribute-jobs-to-a-single-remote-machine" title="Permanent link">&para;</a></h2>
+<p>This is a general purpose usage, where <code>task_list</code> can be defined flexibly. In this case, each <code>Task</code> can have different <code>command_list</code>, <code>forward_files</code>, <code>backward_files</code>.</p>
+<p>To use, just need to:</p>
+<ul>
+<li>Define the <code>task_list</code> as list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects.</li>
+<li>Use function <a href="#submit_job_chunk">submit_job_chunk()</a> to submit jobs to remote machines.</li>
+</ul>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.submit</span><span class="w"> </span><span class="kn">import</span> <span class="n">submit_job_chunk</span><span class="p">,</span> <span class="n">Task</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.helper</span><span class="w"> </span><span class="kn">import</span> <span class="n">loadconfig_multi_machines</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">mdict_list</span> <span class="o">=</span> <span class="n">loadconfig_multi_machines</span><span class="p">(</span><span class="s2">&quot;MACHINE.yml&quot;</span><span class="p">)</span>  <span class="c1"># load the remote machine config</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">mdict</span> <span class="o">=</span> <span class="n">mdict_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># use the first machine in the list</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">task_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">Task</span><span class="p">(),</span> <span class="n">Task</span><span class="p">(),</span> <span class="o">...</span><span class="p">]</span>    <span class="c1"># list of Task objects</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">submit_job_chunk</span><span class="p">(</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">mdict</span><span class="o">=</span><span class="n">mdict</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">work_dir</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">task_list</span><span class="o">=</span><span class="n">task_list</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">forward_common_files</span><span class="o">=</span><span class="n">forward_common_files</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">backward_common_files</span><span class="o">=</span><span class="n">backward_common_files</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">)</span>
+</span></code></pre></div>
+That's it! <code>jobman</code> will handle the rest.</p>
+<ol>
+<li>Info 1: An example of defining <code>task_list</code>:</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">task</span> <span class="o">=</span> <span class="n">Task</span><span class="o">.</span><span class="n">load_from_dict</span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;mpirun -np lmp_serial -in </span><span class="si">{</span><span class="n">runfile</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="s2">&quot;task_work_path&quot;</span><span class="p">:</span> <span class="s2">&quot;./&quot;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="s2">&quot;forward_files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;all_input_files&quot;</span><span class="p">],</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        <span class="s2">&quot;backward_files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;all_getback_files/*&quot;</span><span class="p">],</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="s2">&quot;outlog&quot;</span><span class="p">:</span> <span class="s2">&quot;out.log&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="s2">&quot;errlog&quot;</span><span class="p">:</span> <span class="s2">&quot;err.log&quot;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">}</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">task_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">task</span><span class="p">]</span>
+</span></code></pre></div>
+<ol>
+<li>
+<p>Info 2: Configure the remote machine in <code>MACHINE.yml</code> file, following the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remotes/">remote machine schema</a>.</p>
+</li>
+<li>
+<p>(Optional) Use a launcher script (e.g., <code>launcher.sh</code>) to run python code</p>
+</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">source</span><span class="w"> </span>/etc/profile.d/modules.sh
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>module<span class="w"> </span>use<span class="w"> </span>/home/tha/app/1modulefiles
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>module<span class="w"> </span>load<span class="w"> </span>miniforge
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>py13
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>python<span class="w"> </span>above_py_script.py
+</span></code></pre></div>
+<h2 id="case-2-distribute-jobs-to-multiple-remote-machines">Case 2: Distribute jobs to multiple remote machines<a class="headerlink" href="#case-2-distribute-jobs-to-multiple-remote-machines" title="Permanent link">&para;</a></h2>
+<p>This is used for specific purpose (e.g., <code>alff</code> package), where the jobs have the same forward_files, backward_files; but the command_list can be different based on computing environment on each remote machine. Just need to:</p>
+<ul>
+<li>Prepare the <code>task_dirs</code>, where all of them have the same forward_files, backward_files.</li>
+<li>Define a <code>prepare_command_list()</code> function to prepare the command_list for each remote machine.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.submit</span><span class="w"> </span><span class="kn">import</span> <span class="n">alff_submit_job_multi_remotes</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">loadconfig</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">mdict</span> <span class="o">=</span> <span class="n">loadconfig</span><span class="p">(</span><span class="s2">&quot;remote_machine.yml&quot;</span><span class="p">)</span>  <span class="c1"># load the remote machine config</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">### Prepare command_list on each machine</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">prepare_command_list</span><span class="p">(</span><span class="n">machine</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">command_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">dft_cmd</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;command&quot;</span><span class="p">,</span> <span class="s2">&quot;python&quot;</span><span class="p">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">dft_cmd</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">dft_cmd</span><span class="si">}</span><span class="s2"> ../cli_gpaw_optimize.py ../</span><span class="si">{</span><span class="n">FILE_ARG_ASE</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># `../` to run file in common directory</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">command_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dft_cmd</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="k">return</span> <span class="n">command_list</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">### Submit to multiple machines</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="n">multi_mdict</span><span class="o">=</span><span class="n">mdict</span><span class="p">,</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        <span class="n">prepare_command_list</span><span class="o">=</span><span class="n">prepare_command_list</span><span class="p">,</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">work_dir</span><span class="o">=</span><span class="n">work_dir</span><span class="p">,</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>        <span class="n">task_dirs</span><span class="o">=</span><span class="n">task_dirs</span><span class="p">,</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>        <span class="n">forward_files</span><span class="o">=</span><span class="n">forward_files</span><span class="p">,</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>        <span class="n">backward_files</span><span class="o">=</span><span class="n">backward_files</span><span class="p">,</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>        <span class="n">forward_common_files</span><span class="o">=</span><span class="n">forward_common_files</span><span class="p">,</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        <span class="n">mdict_prefix</span><span class="o">=</span><span class="s2">&quot;dft&quot;</span><span class="p">,</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="n">logger</span><span class="o">=</span><span class="n">logger</span><span class="p">,</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    <span class="p">)</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>Note:
+    - Setting remote machines follow the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>.
+    - Can import from <code>jobman</code> these classes: <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/machine.html">Machine</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/resources.html">Resources</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/api/dpdispatcher.html#dpdispatcher.Submission">Submission</a>.
+    - To handle if some tasks is finished and some tasks are not finished, see the function <a href="https://github.com/deepmodeling/dpdispatcher/blob/d55b3c3435a6b4cb8e200682a39a3418fd04d922/dpdispatcher/entrypoints/submission.py#L9">handle_submission()</a></p>
+<h2 id="api-reference">API Reference:<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<h2 id="thkit.jobman" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thkit.jobman</code>
+
+
+<a href="#thkit.jobman" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+<p><span class="doc-section-title">Modules:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            #retired_code (thkit.jobman.#retired_code)" href="../api/#thkit.jobman.#retired_code">#retired_code</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            helper (thkit.jobman.helper)" href="../api/#thkit.jobman.helper">helper</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            submit (thkit.jobman.submit)" href="../api/#thkit.jobman.submit">submit</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<h3 id="thkit.jobman.#retired_code" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>#retired_code</code>
+
+
+<a href="#thkit.jobman.#retired_code" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None) (thkit.jobman.#retired_code.submit_job_chunk)" href="../api/#thkit.jobman.#retired_code.submit_job_chunk">submit_job_chunk</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Function to submit a jobs to the remote machine. The function will:</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None)
+
+  
+      async
+   (thkit.jobman.#retired_code.async_submit_job_chunk)" href="../api/#thkit.jobman.#retired_code.async_submit_job_chunk">async_submit_job_chunk</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk_tqdm(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None)
+
+  
+      async
+   (thkit.jobman.#retired_code.async_submit_job_chunk_tqdm)" href="../api/#thkit.jobman.#retired_code.async_submit_job_chunk_tqdm">async_submit_job_chunk_tqdm</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Revised version of <code>async_submit_job_chunk()</code> with <code>tqdm</code> progress bar.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            runvar = {}
+
+  
+      module-attribute
+   (thkit.jobman.#retired_code.runvar)" href="../api/#thkit.jobman.#retired_code.runvar">runvar</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            global_lock = asyncio.Lock()
+
+  
+      module-attribute
+   (thkit.jobman.#retired_code.global_lock)" href="../api/#thkit.jobman.#retired_code.global_lock">global_lock</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="thkit.jobman.#retired_code.runvar" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">runvar</span> <span class="o">=</span> <span class="p">{}</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#thkit.jobman.#retired_code.runvar" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="thkit.jobman.#retired_code.global_lock" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">global_lock</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#thkit.jobman.#retired_code.global_lock" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.#retired_code.submit_job_chunk" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.#retired_code.submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Function to submit a jobs to the remote machine. The function will:</p>
+<ul>
+<li>Prepare the task list</li>
+<li>Make the submission of jobs to remote machines</li>
+<li>Wait for the jobs to finish and download the results to the local machine</li>
+</ul>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>mdict</code></b>
+              (<code><span title="dict">dict</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>a dictionary contain settings of the remote machine. The parameters described in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>. This dictionary defines the login information, resources, execution command, etc. on the remote machine.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>task_list</code></b>
+              (<code><span title="list">list</span>[<span title="dpdispatcher.Task">Task</span>]</code>)
+          –
+          <div class="doc-md-description">
+            <p>a list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects. Each task object contains the command to be executed on the remote machine, and the files to be copied to and from the remote machine. The dirs of each task must be relative to the <code>work_dir</code>.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>forward_common_files</code></b>
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+                  <code>[]</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>common files used for all tasks. These files are i n the <code>work_dir</code>.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>backward_common_files</code></b>
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+                  <code>[]</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>common files to download from the remote machine when the jobs are finished.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>machine_index</code></b>
+              (<code><span title="int">int</span></code>, default:
+                  <code>0</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>index of the machine in the list of machines.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>logger</code></b>
+              (<code><span title="object">object</span></code>, default:
+                  <code>None</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>the logger object to be used for logging.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>Split the <code>task_list</code> into chunks to control the number of jobs submitted at once.</li>
+<li>Should not use the <code>Local</code> contexts, it will interference the current shell environment which leads to the unexpected behavior on local machine. Instead, use another account to connect local machine with <code>SSH</code> context.</li>
+</ul>
+</details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.#retired_code.async_submit_job_chunk" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#thkit.jobman.#retired_code.async_submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>An async function normally contain a <code>await ...</code> statement to be awaited (yield control to event loop)</li>
+<li>If the 'event loop is blocked' by a asynchronous function (it will not yield control to event loop), the async function will wait for the completion of the synchronous function. So, the async function will not be executed asynchronously. Try to use <code>await asyncio.to_thread()</code> to run the synchronous function in a separate thread, so that the event loop is not blocked.</li>
+</ul>
+</details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.#retired_code.async_submit_job_chunk_tqdm" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk_tqdm</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#thkit.jobman.#retired_code.async_submit_job_chunk_tqdm" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Revised version of <code>async_submit_job_chunk()</code> with <code>tqdm</code> progress bar.</p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+
+<h3 id="thkit.jobman.helper" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>helper</code>
+
+
+<a href="#thkit.jobman.helper" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            change_logpath_dispatcher(newlogfile: str) (thkit.jobman.helper.change_logpath_dispatcher)" href="../api/#thkit.jobman.helper.change_logpath_dispatcher">change_logpath_dispatcher</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Change the logfile of dpdispatcher.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str | None = None) (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Initialize the default logger under <code>log/</code>, if not provided</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            remote_info(machine_dict) -> str (thkit.jobman.helper.remote_info)" href="../api/#thkit.jobman.helper.remote_info">remote_info</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Return the remote machine information.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(machine_file: str) (thkit.jobman.helper.validate_machine_config)" href="../api/#thkit.jobman.helper.validate_machine_config">validate_machine_config</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Validate the YAML file contains multiple machines configs. This function is used to validate machine configs at very beginning of program to avoid later errors.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            check_remote_connection(machine_file: str) (thkit.jobman.helper.check_remote_connection)" href="../api/#thkit.jobman.helper.check_remote_connection">check_remote_connection</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Validate the remote connection for multiple machines in the machine config file.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            loadconfig_multi_machines(machine_file: str, mdict_prefix: str = '') -> list[dict] (thkit.jobman.helper.loadconfig_multi_machines)" href="../api/#thkit.jobman.helper.loadconfig_multi_machines">loadconfig_multi_machines</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Load and validate the YAML file contains multiple machine configs. This function to load machine configs for general purpose usage.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.change_logpath_dispatcher" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">change_logpath_dispatcher</span><span class="p">(</span><span class="n">newlogfile</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.helper.change_logpath_dispatcher" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Change the logfile of dpdispatcher.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.init_jobman_logger" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.helper.init_jobman_logger" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Initialize the default logger under <code>log/</code>, if not provided</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.remote_info" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">remote_info</span><span class="p">(</span><span class="n">machine_dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+<a href="#thkit.jobman.helper.remote_info" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Return the remote machine information.
+Args:
+    mdict (dict): the machine dictionary</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.validate_machine_config" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">machine_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.helper.validate_machine_config" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Validate the YAML file contains multiple machines configs. This function is used to validate machine configs at very beginning of program to avoid later errors.</p>
+
+
+<details class="notes" open>
+  <summary>Notes</summary>
+  <ul>
+<li>To specify multiple remote machines for the same purpose, the top-level keys in the machine config file should start with the same prefix. Example:<ul>
+<li><code>train_1</code>, <code>train_2</code>,... for training jobs</li>
+<li><code>lammps_1</code>, <code>lammps_2</code>,... for lammps jobs</li>
+<li><code>gpaw_1</code>, <code>gpaw_2</code>,... for gpaw jobs</li>
+</ul>
+</li>
+</ul>
+</details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.check_remote_connection" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_remote_connection</span><span class="p">(</span><span class="n">machine_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.helper.check_remote_connection" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Validate the remote connection for multiple machines in the machine config file.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.helper.loadconfig_multi_machines" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">loadconfig_multi_machines</span><span class="p">(</span><span class="n">machine_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">mdict_prefix</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span></code>
+
+<a href="#thkit.jobman.helper.loadconfig_multi_machines" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Load and validate the YAML file contains multiple machine configs. This function to load machine configs for general purpose usage.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>machine_file</code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>the path of the machine config file</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>dict</code></b> (              <code><span title="list">list</span>[<span title="dict">dict</span>]</code>
+)          –
+          <div class="doc-md-description">
+            <p>the multi-machine dict</p>
+          </div>
+        </li>
+    </ul>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+
+<h3 id="thkit.jobman.submit" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>submit</code>
+
+
+<a href="#thkit.jobman.submit" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None) (thkit.jobman.submit.submit_job_chunk)" href="../api/#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Function to submit a jobs to the remote machine. The function will:</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None)
+
+  
+      async
+   (thkit.jobman.submit.async_submit_job_chunk)" href="../api/#thkit.jobman.submit.async_submit_job_chunk">async_submit_job_chunk</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            alff_submit_job_multi_remotes(mdict_list: list[dict], commandlist_list: list[list[str]], work_dir: str, task_dirs: list[str], forward_files: list[str], backward_files: list[str], forward_common_files: list[str] = [], backward_common_files: list[str] = [], logger: object = None)
+
+  
+      async
+   (thkit.jobman.submit.alff_submit_job_multi_remotes)" href="../api/#thkit.jobman.submit.alff_submit_job_multi_remotes">alff_submit_job_multi_remotes</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit jobs to multiple machines asynchronously.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            sync_dict = {}
+
+  
+      module-attribute
+   (thkit.jobman.submit.sync_dict)" href="../api/#thkit.jobman.submit.sync_dict">sync_dict</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="            global_lock = asyncio.Lock()
+
+  
+      module-attribute
+   (thkit.jobman.submit.global_lock)" href="../api/#thkit.jobman.submit.global_lock">global_lock</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="thkit.jobman.submit.sync_dict" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">sync_dict</span> <span class="o">=</span> <span class="p">{}</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#thkit.jobman.submit.sync_dict" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="thkit.jobman.submit.global_lock" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">global_lock</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#thkit.jobman.submit.global_lock" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.submit.submit_job_chunk" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#thkit.jobman.submit.submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Function to submit a jobs to the remote machine. The function will:</p>
+<ul>
+<li>Prepare the task list</li>
+<li>Make the submission of jobs to remote machines</li>
+<li>Wait for the jobs to finish and download the results to the local machine</li>
+</ul>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>mdict</code></b>
+              (<code><span title="dict">dict</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>a dictionary contain settings of the remote machine. The parameters described in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>. This dictionary defines the login information, resources, execution command, etc. on the remote machine.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>task_list</code></b>
+              (<code><span title="list">list</span>[<span title="dpdispatcher.Task">Task</span>]</code>)
+          –
+          <div class="doc-md-description">
+            <p>a list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects. Each task object contains the command to be executed on the remote machine, and the files to be copied to and from the remote machine. The dirs of each task must be relative to the <code>work_dir</code>.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>forward_common_files</code></b>
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+                  <code>[]</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>common files used for all tasks. These files are i n the <code>work_dir</code>.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>backward_common_files</code></b>
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+                  <code>[]</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>common files to download from the remote machine when the jobs are finished.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>machine_index</code></b>
+              (<code><span title="int">int</span></code>, default:
+                  <code>0</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>index of the machine in the list of machines.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>logger</code></b>
+              (<code><span title="object">object</span></code>, default:
+                  <code>None</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>the logger object to be used for logging.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>Split the <code>task_list</code> into chunks to control the number of jobs submitted at once.</li>
+<li>Should not use the <code>Local</code> contexts, it will interference the current shell environment which leads to the unexpected behavior on local machine. Instead, use another account to connect local machine with <code>SSH</code> context.</li>
+</ul>
+</details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.submit.async_submit_job_chunk" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#thkit.jobman.submit.async_submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>An async function normally contain a <code>await ...</code> statement to be awaited (yield control to event loop)</li>
+<li>If the 'event loop is blocked' by a asynchronous function (it will not yield control to event loop), the async function will wait for the completion of the synchronous function. So, the async function will not be executed asynchronously. Try to use <code>await asyncio.to_thread()</code> to run the synchronous function in a separate thread, so that the event loop is not blocked.</li>
+<li>This version use <code>rich</code> instead of <code>tqdm</code> for better handle progess bars (see retired codes). Multiple <code>tqdm</code> bars work well if there are not errors during job submission. However, if the jobs raise errors, the <code>tqdm</code> bars will be messed up.</li>
+<li><code>rich</code>'s remaining time does not work well with multiple progress bars. So, I implemented a customized time remaining column.</li>
+</ul>
+</details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.jobman.submit.alff_submit_job_multi_remotes" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span><span class="n">mdict_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">commandlist_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">backward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#thkit.jobman.submit.alff_submit_job_multi_remotes" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Submit jobs to multiple machines asynchronously.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>mdict_list</code></b>
+              (<code><span title="list">list</span>[<span title="dict">dict</span>]</code>)
+          –
+          <div class="doc-md-description">
+            <p>list of multiple <code>mdicts</code>. Each <code>mdict</code> contains parameters of one remote machine, which parameters as in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>commandlist_list</code></b>
+              (<code><span title="list">list</span>[<span title="list">list</span>[<span title="str">str</span>]]</code>)
+          –
+          <div class="doc-md-description">
+            <p>list of command_lists, each list for each remote machine. Need to prepare outside.</p>
+          </div>
+        </li>
+    </ul>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: About">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                About
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../config/" class="md-footer__link md-footer__link--next" aria-label="Next: config">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                config
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 <a href="https://thangckt.github.io">thangckt</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "search.suggest", "toc.follow", "navigation.tabs", "navigation.tabs.sticky", "navigation.tabs.header", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bbea823e.min.js"></script>
+      
+        <script src="../1thang_js/gas_ip_logger.js"></script>
+      
+    
+  </body>
+</html>

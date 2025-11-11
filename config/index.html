@@ -729,29 +729,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.config.validate_config" class="md-nav__link">
+  <a href="#thkit.config.Config" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;validate_config
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Config
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.config.Config.validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.config.loadconfig" class="md-nav__link">
+  <a href="#thkit.config.Config.loadconfig" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;loadconfig
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;loadconfig
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#thkit.config.load_jsonc" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;load_jsonc
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1250,29 +1256,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.config.validate_config" class="md-nav__link">
+  <a href="#thkit.config.Config" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;validate_config
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Config
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thkit.config.Config.validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;validate
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.config.loadconfig" class="md-nav__link">
+  <a href="#thkit.config.Config.loadconfig" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;loadconfig
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;loadconfig
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#thkit.config.load_jsonc" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;load_jsonc
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1338,31 +1350,22 @@
 
 
 
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="              Config() (thkit.config.Config)" href="../api/#thkit.config.Config">Config</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Base class for configuration files.</p>
+          </div>
+        </li>
+    </ul>
+
+
 
 
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate_config(config_dict=None, config_file=None, schema_dict=None, schema_file=None, allow_unknown=False, require_all=False) (thkit.config.validate_config)" href="../api/#thkit.config.validate_config">validate_config</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Validate the config file with the schema file.</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            loadconfig(filename: str | Path) -> dict (thkit.config.loadconfig)" href="../api/#thkit.config.loadconfig">loadconfig</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Load data from a JSON or YAML file.</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            load_jsonc(filename: str) -> dict (thkit.config.load_jsonc)" href="../api/#thkit.config.load_jsonc">load_jsonc</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Load data from a JSON file that allow comments.</p>
-            </div>
-          </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            get_default_args(func: callable) -> dict (thkit.config.get_default_args)" href="../api/#thkit.config.get_default_args">get_default_args</a></code></b>
             –
@@ -1393,14 +1396,86 @@
 
 
 
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="thkit.config.Config" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Config</span><span class="p">()</span></code>
+
+<a href="#thkit.config.Config" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+
+
+        <p>Base class for configuration files.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict=None, config_file=None, schema_dict=None, schema_file=None, allow_unknown=False, require_all=False)
+
+  
+      staticmethod
+   (thkit.config.Config.validate)" href="../api/#thkit.config.Config.validate">validate</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Validate the config file with the schema file.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            loadconfig(filename: str | Path) -> dict
+
+  
+      staticmethod
+   (thkit.config.Config.loadconfig)" href="../api/#thkit.config.Config.loadconfig">loadconfig</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Load data from a JSON or YAML file.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
 
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.config.validate_config" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">validate_config</span><span class="p">(</span><span class="n">config_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<h4 id="thkit.config.Config.validate" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
-<a href="#thkit.config.validate_config" class="headerlink" title="Permanent link">&para;</a></h3>
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#thkit.config.Config.validate" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1492,10 +1567,14 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.config.loadconfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">loadconfig</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<h4 id="thkit.config.Config.loadconfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">loadconfig</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
-<a href="#thkit.config.loadconfig" class="headerlink" title="Permanent link">&para;</a></h3>
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#thkit.config.Config.loadconfig" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1538,23 +1617,14 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 </div>
 
-<div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.config.load_jsonc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">load_jsonc</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
-
-<a href="#thkit.config.load_jsonc" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Load data from a JSON file that allow comments.</p>
-
+  </div>
 
     </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 

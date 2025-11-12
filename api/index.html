@@ -1507,9 +1507,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.remote_info" class="md-nav__link">
+  <a href="#thkit.jobman.helper.log_machine_info" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;remote_info
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;log_machine_info
     </span>
   </a>
   
@@ -2097,6 +2097,15 @@
   <a href="#thkit.pkg.create_logger" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;create_logger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.pkg.write_to_logfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;write_to_logfile
     </span>
   </a>
   
@@ -3080,9 +3089,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.remote_info" class="md-nav__link">
+  <a href="#thkit.jobman.helper.log_machine_info" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;remote_info
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;log_machine_info
     </span>
   </a>
   
@@ -3676,6 +3685,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#thkit.pkg.write_to_logfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;write_to_logfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#thkit.pkg.check_package" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;check_package
@@ -4109,7 +4127,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'geaa58fa86'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g6dc76b39d'
 
   
       module-attribute
@@ -4125,7 +4143,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'geaa58fa86'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g6dc76b39d'
 
   
       module-attribute
@@ -4317,7 +4335,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;geaa58fa86&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g6dc76b39d&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4337,7 +4355,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;geaa58fa86&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g6dc76b39d&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -5791,10 +5809,10 @@ REF: <a href="https://stackoverflow.com/questions/2440692/formatting-floats-with
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            remote_info(machine_dict) -> str (thkit.jobman.helper.remote_info)" href="#thkit.jobman.helper.remote_info">remote_info</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            log_machine_info(num_jobs: int, mdict: dict, machine_index: int, logger: object) (thkit.jobman.helper.log_machine_info)" href="#thkit.jobman.helper.log_machine_info">log_machine_info</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Return the remote machine information.</p>
+              <p>Log remote machine information.</p>
             </div>
           </li>
     </ul>
@@ -6322,17 +6340,15 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <div class="doc doc-object doc-function">
 
 
-<h5 id="thkit.jobman.helper.remote_info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">remote_info</span><span class="p">(</span><span class="n">machine_dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+<h5 id="thkit.jobman.helper.log_machine_info" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">log_machine_info</span><span class="p">(</span><span class="n">num_jobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span></code>
 
-<a href="#thkit.jobman.helper.remote_info" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#thkit.jobman.helper.log_machine_info" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
 
-        <p>Return the remote machine information.
-Args:
-    mdict (dict): the machine dictionary</p>
+        <p>Log remote machine information.</p>
 
 
     </div>
@@ -8104,6 +8120,13 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            write_to_logfile(text: str, logger: object) (thkit.pkg.write_to_logfile)" href="#thkit.pkg.write_to_logfile">write_to_logfile</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Retrieve logfile name from logger and write text to it. Useful when want to write unformat text to the same logfile used by logger.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str = None, conda_channel: str = None) (thkit.pkg.check_package)" href="#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
@@ -8296,6 +8319,24 @@ patterns : list[str]
     <div class="doc doc-contents ">
 
         <p>Create a logger that supports <code>color</code> argument per message, to colorize console output and plain-text logfile.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.pkg.write_to_logfile" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_to_logfile</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span></code>
+
+<a href="#thkit.pkg.write_to_logfile" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve logfile name from logger and write text to it. Useful when want to write unformat text to the same logfile used by logger.</p>
 
 
     </div>

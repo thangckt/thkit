@@ -817,27 +817,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.machine_schemas" class="md-nav__link">
+  <a href="#thkit.jobman.helper.ConfigRemoteMachines.machines_file" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;machine_schemas
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;machines_file
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdict" class="md-nav__link">
+  <a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;multi_mdict
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.file_config_machines" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;file_config_machines
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;multi_mdicts
     </span>
   </a>
   
@@ -963,9 +954,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.change_logpath_dispatcher" class="md-nav__link">
+  <a href="#thkit.jobman.helper.change_logfile_dispatcher" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logpath_dispatcher
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logfile_dispatcher
     </span>
   </a>
   
@@ -1663,27 +1654,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.machine_schemas" class="md-nav__link">
+  <a href="#thkit.jobman.helper.ConfigRemoteMachines.machines_file" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;machine_schemas
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;machines_file
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdict" class="md-nav__link">
+  <a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;multi_mdict
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.ConfigRemoteMachines.file_config_machines" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;file_config_machines
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;multi_mdicts
     </span>
   </a>
   
@@ -1809,9 +1791,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.jobman.helper.change_logpath_dispatcher" class="md-nav__link">
+  <a href="#thkit.jobman.helper.change_logfile_dispatcher" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logpath_dispatcher
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;change_logfile_dispatcher
     </span>
   </a>
   
@@ -1931,20 +1913,21 @@
 <li>Define the <code>task_list</code> as list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects.</li>
 <li>Use function <a href="#submit_job_chunk">submit_job_chunk()</a> to submit jobs to remote machines.</li>
 </ul>
-<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.submit</span><span class="w"> </span><span class="kn">import</span> <span class="n">submit_job_chunk</span><span class="p">,</span> <span class="n">Task</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.helper</span><span class="w"> </span><span class="kn">import</span> <span class="n">loadconfig_multi_machines</span>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.helper</span><span class="w"> </span><span class="kn">import</span> <span class="n">ConfigRemoteMachines</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman.submit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Task</span><span class="p">,</span> <span class="n">submit_job_chunk</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">mdict_list</span> <span class="o">=</span> <span class="n">loadconfig_multi_machines</span><span class="p">(</span><span class="s2">&quot;MACHINE.yml&quot;</span><span class="p">)</span>  <span class="c1"># load the remote machine config</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">mdict</span> <span class="o">=</span> <span class="n">mdict_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># use the first machine in the list</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">task_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">Task</span><span class="p">(),</span> <span class="n">Task</span><span class="p">(),</span> <span class="o">...</span><span class="p">]</span>    <span class="c1"># list of Task objects</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">submit_job_chunk</span><span class="p">(</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">mdict</span><span class="o">=</span><span class="n">mdict</span><span class="p">,</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">work_dir</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">task_list</span><span class="o">=</span><span class="n">task_list</span><span class="p">,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">forward_common_files</span><span class="o">=</span><span class="n">forward_common_files</span><span class="p">,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">backward_common_files</span><span class="o">=</span><span class="n">backward_common_files</span><span class="p">,</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">config</span> <span class="o">=</span> <span class="n">ConfigRemoteMachines</span><span class="p">(</span><span class="s2">&quot;MACHINE.yml&quot;</span><span class="p">)</span>  <span class="c1"># load the remote machine config</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">mdict_list</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">select_machines</span><span class="p">(</span><span class="n">mdict_prefix</span><span class="o">=</span><span class="s2">&quot;lammps_&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">mdict</span> <span class="o">=</span> <span class="n">mdict_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># use the first machine in the list</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">task_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">Task</span><span class="p">(),</span> <span class="n">Task</span><span class="p">(),</span> <span class="o">...</span><span class="p">]</span>    <span class="c1"># list of Task objects</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">submit_job_chunk</span><span class="p">(</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">mdict</span><span class="o">=</span><span class="n">mdict</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">work_dir</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">task_list</span><span class="o">=</span><span class="n">task_list</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">forward_common_files</span><span class="o">=</span><span class="n">forward_common_files</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">backward_common_files</span><span class="o">=</span><span class="n">backward_common_files</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">)</span>
 </span></code></pre></div>
 That's it! <code>jobman</code> will handle the rest.</p>
 <ol>
@@ -2399,7 +2382,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="              ConfigRemoteMachines(file_config_machines: str) (thkit.jobman.helper.ConfigRemoteMachines)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines">ConfigRemoteMachines</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              ConfigRemoteMachines(machines_file: str) (thkit.jobman.helper.ConfigRemoteMachines)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines">ConfigRemoteMachines</a></code></b>
           –
           <div class="doc-md-description">
             <p>Class for remote machine configuration files.</p>
@@ -2420,7 +2403,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            change_logpath_dispatcher(newlogfile: str) (thkit.jobman.helper.change_logpath_dispatcher)" href="../api/#thkit.jobman.helper.change_logpath_dispatcher">change_logpath_dispatcher</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            change_logfile_dispatcher(newlogfile: str) (thkit.jobman.helper.change_logfile_dispatcher)" href="../api/#thkit.jobman.helper.change_logfile_dispatcher">change_logfile_dispatcher</a></code></b>
             –
             <div class="doc-md-description">
               <p>Change the logfile of dpdispatcher.</p>
@@ -2461,20 +2444,20 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
 
 <h4 id="thkit.jobman.helper.ConfigRemoteMachines" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">ConfigRemoteMachines</span><span class="p">(</span><span class="n">file_config_machines</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">ConfigRemoteMachines</span><span class="p">(</span><span class="n">machines_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.ConfigRemoteMachines" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-internal" title="              Config() (thkit.config.Config)" href="../api/#thkit.config.Config">Config</a></code></p>
+              Bases: <code><a class="autorefs autorefs-internal" title="            Config (thkit.config.Config)" href="../api/#thkit.config.Config">Config</a></code></p>
 
 
 
         <p>Class for remote machine configuration files.
 Agrs:
-    file_config_machines (str): path to the YAML file contains multiple machines configs.</p>
+    machines_file (str): path to the YAML file contains multiple machines configs.</p>
 
 
 
@@ -2490,7 +2473,7 @@ Agrs:
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config() (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str | None = None) (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
             –
             <div class="doc-md-description">
               <p>Validate multiple machines configs.</p>
@@ -2518,7 +2501,7 @@ Agrs:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict=None, config_file=None, schema_dict=None, schema_file=None, allow_unknown=False, require_all=False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -2547,33 +2530,23 @@ Agrs:
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            machine_schemas = self.loadconfig(SCHEMA_MACHINE_FILE)
+          <b><code><a class="autorefs autorefs-internal" title="            machines_file: str = machines_file
 
   
       instance-attribute
-   (thkit.jobman.helper.ConfigRemoteMachines.machine_schemas)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.machine_schemas">machine_schemas</a></code></b>
+   (thkit.jobman.helper.ConfigRemoteMachines.machines_file)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.machines_file">machines_file</a></code></b>
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
             
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            multi_mdict = self.loadconfig(file_config_machines)
+          <b><code><a class="autorefs autorefs-internal" title="            multi_mdicts = self.loadconfig(machines_file)
 
   
       instance-attribute
-   (thkit.jobman.helper.ConfigRemoteMachines.multi_mdict)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.multi_mdict">multi_mdict</a></code></b>
-          –
-          <div class="doc-md-description">
-            
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            file_config_machines = file_config_machines
-
-  
-      instance-attribute
-   (thkit.jobman.helper.ConfigRemoteMachines.file_config_machines)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.file_config_machines">file_config_machines</a></code></b>
+   (thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts">multi_mdicts</a></code></b>
           –
           <div class="doc-md-description">
             
@@ -2596,14 +2569,14 @@ Agrs:
 
 
 
-<h5 id="thkit.jobman.helper.ConfigRemoteMachines.machine_schemas" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">machine_schemas</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">loadconfig</span><span class="p">(</span><span class="n">SCHEMA_MACHINE_FILE</span><span class="p">)</span></code>
+<h5 id="thkit.jobman.helper.ConfigRemoteMachines.machines_file" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">machines_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">machines_file</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#thkit.jobman.helper.ConfigRemoteMachines.machine_schemas" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#thkit.jobman.helper.ConfigRemoteMachines.machines_file" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -2616,34 +2589,14 @@ Agrs:
 
 
 
-<h5 id="thkit.jobman.helper.ConfigRemoteMachines.multi_mdict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">multi_mdict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">loadconfig</span><span class="p">(</span><span class="n">file_config_machines</span><span class="p">)</span></code>
+<h5 id="thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">multi_mdicts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">loadconfig</span><span class="p">(</span><span class="n">machines_file</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdict" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="thkit.jobman.helper.ConfigRemoteMachines.file_config_machines" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">file_config_machines</span> <span class="o">=</span> <span class="n">file_config_machines</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#thkit.jobman.helper.ConfigRemoteMachines.file_config_machines" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#thkit.jobman.helper.ConfigRemoteMachines.multi_mdicts" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -2659,7 +2612,7 @@ Agrs:
 
 
 <h5 id="thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">()</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -2685,7 +2638,7 @@ Agrs:
     <div class="doc doc-contents ">
 
         <p>Select machine dicts based on the prefix.</p>
-<p>To specify multiple remote machines for the same purpose, the top-level keys in the <code>file_config_machines</code> should start with the same prefix. Example:
+<p>To specify multiple remote machines for the same purpose, the top-level keys in the <code>machines_file</code> should start with the same prefix. Example:
     - <code>train_1</code>, <code>train_2</code>,... for training jobs
     - <code>lammps_1</code>, <code>lammps_2</code>,... for lammps jobs
     - <code>gpaw_1</code>, <code>gpaw_2</code>,... for gpaw jobs</p>
@@ -2745,7 +2698,7 @@ Agrs:
 )
           –
           <div class="doc-md-description">
-            <p>the prefix to select remote machines for checking.</p>
+            <p>Only check the remote machines with this prefix.</p>
           </div>
         </li>
     </ul>
@@ -2769,21 +2722,6 @@ Agrs:
         <p>Check whether the resource settings in all remote machines are valid.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-            <b><code>mdict_prefix</code></b>
-              (<code><span title="str">str</span></code>, default:
-                  <code>&#39;&#39;</code>
-)
-          –
-          <div class="doc-md-description">
-            <p>the prefix to select remote machines for checking.</p>
-          </div>
-        </li>
-    </ul>
-
-
     </div>
 
 </div>
@@ -2792,7 +2730,7 @@ Agrs:
 
 
 <h5 id="thkit.jobman.helper.ConfigRemoteMachines.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -2960,7 +2898,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-internal" title="              Config() (thkit.config.Config)" href="../api/#thkit.config.Config">Config</a></code></p>
+              Bases: <code><a class="autorefs autorefs-internal" title="            Config (thkit.config.Config)" href="../api/#thkit.config.Config">Config</a></code></p>
 
 
 
@@ -2989,7 +2927,7 @@ Agrs:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict=None, config_file=None, schema_dict=None, schema_file=None, allow_unknown=False, require_all=False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -3134,7 +3072,7 @@ Agrs:
 
 
 <h5 id="thkit.jobman.helper.ConfigParams.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -3294,10 +3232,10 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <div class="doc doc-object doc-function">
 
 
-<h4 id="thkit.jobman.helper.change_logpath_dispatcher" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">change_logpath_dispatcher</span><span class="p">(</span><span class="n">newlogfile</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+<h4 id="thkit.jobman.helper.change_logfile_dispatcher" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">change_logfile_dispatcher</span><span class="p">(</span><span class="n">newlogfile</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
-<a href="#thkit.jobman.helper.change_logpath_dispatcher" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#thkit.jobman.helper.change_logfile_dispatcher" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">

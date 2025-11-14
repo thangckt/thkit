@@ -3855,7 +3855,7 @@
     <div class="doc doc-contents first">
 
         <p><img src="./1images/kde_color_128x128.png" style="float: left; margin-right: 20px" width="120" /></p>
-<p>The Python package of general ulitities.</p>
+<p>The Python package of general utilities.</p>
 <p>Developed and maintained by <a href="https://thangckt.github.io">C.Thang Nguyen</a></p>
 
 
@@ -4127,7 +4127,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'gd1b33c3c3'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g314ea5510'
 
   
       module-attribute
@@ -4143,7 +4143,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'gd1b33c3c3'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g314ea5510'
 
   
       module-attribute
@@ -4335,7 +4335,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;gd1b33c3c3&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g314ea5510&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4355,7 +4355,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;gd1b33c3c3&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g314ea5510&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -5809,7 +5809,7 @@ REF: <a href="https://stackoverflow.com/questions/2440692/formatting-floats-with
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            log_machine_info(num_jobs: int, mdict: dict, machine_index: int, logger: object) (thkit.jobman.helper.log_machine_info)" href="#thkit.jobman.helper.log_machine_info">log_machine_info</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            log_machine_info(num_jobs: int, mdict: dict, machine_index: int, logger: logging.Logger) (thkit.jobman.helper.log_machine_info)" href="#thkit.jobman.helper.log_machine_info">log_machine_info</a></code></b>
             –
             <div class="doc-md-description">
               <p>Log remote machine information.</p>
@@ -5848,7 +5848,7 @@ REF: <a href="https://stackoverflow.com/questions/2440692/formatting-floats-with
 
 
         <p>Class for remote machine configuration files.
-Agrs:
+Args:
     machines_file (str): path to the YAML file contains multiple machines configs.</p>
 
 
@@ -6341,7 +6341,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.jobman.helper.log_machine_info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">log_machine_info</span><span class="p">(</span><span class="n">num_jobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">log_machine_info</span><span class="p">(</span><span class="n">num_jobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.log_machine_info" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -8120,7 +8120,7 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_to_logfile(logger: object, text: str) (thkit.pkg.write_to_logfile)" href="#thkit.pkg.write_to_logfile">write_to_logfile</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_to_logfile(logger: logging.Logger, text: str) (thkit.pkg.write_to_logfile)" href="#thkit.pkg.write_to_logfile">write_to_logfile</a></code></b>
             –
             <div class="doc-md-description">
               <p>Retrieve logfile name from logger and write text to it. Useful when want to write unformat text to the same logfile used by logger.</p>
@@ -8329,7 +8329,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.write_to_logfile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_to_logfile</span><span class="p">(</span><span class="n">logger</span><span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_to_logfile</span><span class="p">(</span><span class="n">logger</span><span class="p">:</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.write_to_logfile" class="headerlink" title="Permanent link">&para;</a></h4>
 

@@ -4127,7 +4127,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g05a7e2ab6'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g52cdf3f20'
 
   
       module-attribute
@@ -4143,7 +4143,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g05a7e2ab6'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g52cdf3f20'
 
   
       module-attribute
@@ -4335,7 +4335,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g05a7e2ab6&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g52cdf3f20&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4355,7 +4355,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g05a7e2ab6&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g52cdf3f20&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -7667,7 +7667,7 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            filter_dirs(dirs: list[str], has_files: list[str] = None, no_files: list[str] = None) -> list[str] (thkit.path.filter_dirs)" href="#thkit.path.filter_dirs">filter_dirs</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            filter_dirs(dirs: list[str], has_files: list[str] | None = None, no_files: list[str] | None = None) -> list[str] (thkit.path.filter_dirs)" href="#thkit.path.filter_dirs">filter_dirs</a></code></b>
             –
             <div class="doc-md-description">
               <p>Return directories containing <code>has_files</code> and none of <code>no_files</code>.</p>
@@ -8008,7 +8008,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.path.filter_dirs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">filter_dirs</span><span class="p">(</span><span class="n">dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">has_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">no_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">filter_dirs</span><span class="p">(</span><span class="n">dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">has_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">no_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.filter_dirs" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8030,7 +8030,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>has_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><span title="list">list</span>[<span title="str">str</span>] | None</code>, default:
                   <code>None</code>
 )
           –
@@ -8040,7 +8040,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>no_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><span title="list">list</span>[<span title="str">str</span>] | None</code>, default:
                   <code>None</code>
 )
           –

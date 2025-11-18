@@ -1863,9 +1863,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.path.ask_user_action" class="md-nav__link">
+  <a href="#thkit.path.ask_yesnoback" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_user_action
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_yesnoback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.path.ask_yesno" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_yesno
     </span>
   </a>
   
@@ -3445,9 +3454,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#thkit.path.ask_user_action" class="md-nav__link">
+  <a href="#thkit.path.ask_yesnoback" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_user_action
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_yesnoback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.path.ask_yesno" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;ask_yesno
     </span>
   </a>
   
@@ -4127,7 +4145,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g52cdf3f20'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g995b0f3ca'
 
   
       module-attribute
@@ -4143,7 +4161,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g52cdf3f20'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g995b0f3ca'
 
   
       module-attribute
@@ -4335,7 +4353,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g52cdf3f20&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g995b0f3ca&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4355,7 +4373,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g52cdf3f20&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g995b0f3ca&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -7590,17 +7608,24 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            make_dir_ask_backup(dir_path: str) (thkit.path.make_dir_ask_backup)" href="#thkit.path.make_dir_ask_backup">make_dir_ask_backup</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            make_dir_ask_backup(dir_path: str, logger: logging.Logger | None = None) (thkit.path.make_dir_ask_backup)" href="#thkit.path.make_dir_ask_backup">make_dir_ask_backup</a></code></b>
             –
             <div class="doc-md-description">
               <p>Make a directory and ask for backup if the directory already exists.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            ask_user_action(question: str) -> str (thkit.path.ask_user_action)" href="#thkit.path.ask_user_action">ask_user_action</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            ask_yesnoback(prompt: str) -> str (thkit.path.ask_yesnoback)" href="#thkit.path.ask_yesnoback">ask_yesnoback</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Ask user for one of: yes / no / backup, and return normalized choice.</p>
+              <p>Ask user for a yes/no/backup response.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            ask_yesno(prompt: str) -> str (thkit.path.ask_yesno)" href="#thkit.path.ask_yesno">ask_yesno</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask user a yes/no question and return the normalized choice.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -7712,7 +7737,7 @@ Args:
 
 
 <h4 id="thkit.path.make_dir_ask_backup" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir_ask_backup</span><span class="p">(</span><span class="n">dir_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir_ask_backup</span><span class="p">(</span><span class="n">dir_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.path.make_dir_ask_backup" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -7729,15 +7754,33 @@ Args:
 <div class="doc doc-object doc-function">
 
 
-<h4 id="thkit.path.ask_user_action" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">ask_user_action</span><span class="p">(</span><span class="n">question</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+<h4 id="thkit.path.ask_yesnoback" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">ask_yesnoback</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
-<a href="#thkit.path.ask_user_action" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#thkit.path.ask_yesnoback" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Ask user for one of: yes / no / backup, and return normalized choice.</p>
+        <p>Ask user for a yes/no/backup response.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.path.ask_yesno" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">ask_yesno</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+<a href="#thkit.path.ask_yesno" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Ask user a yes/no question and return the normalized choice.</p>
 
 
     </div>

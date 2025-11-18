@@ -4145,7 +4145,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g995b0f3ca'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'ge289ddb5e'
 
   
       module-attribute
@@ -4161,7 +4161,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g995b0f3ca'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'ge289ddb5e'
 
   
       module-attribute
@@ -4353,7 +4353,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g995b0f3ca&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge289ddb5e&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4373,7 +4373,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g995b0f3ca&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge289ddb5e&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -8156,7 +8156,7 @@ patterns : list[str]
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str = None, log_file: str = None, level: str = 'INFO', level_logfile: str = None) -> logging.Logger (thkit.pkg.create_logger)" href="#thkit.pkg.create_logger">create_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str | None = None, logfile: str | None = None, level: str = 'INFO', level_logfile: str | None = None) -> logging.Logger (thkit.pkg.create_logger)" href="#thkit.pkg.create_logger">create_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Create a logger that supports <code>color</code> argument per message, to colorize console output and plain-text logfile.</p>
@@ -8170,7 +8170,7 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str = None, conda_channel: str = None) (thkit.pkg.check_package)" href="#thkit.pkg.check_package">check_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str | None = None, conda_channel: str | None = None) (thkit.pkg.check_package)" href="#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check if the required packages are installed</p>
@@ -8354,7 +8354,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.create_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">log_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
 
 <a href="#thkit.pkg.create_logger" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8390,7 +8390,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.check_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.check_package" class="headerlink" title="Permanent link">&para;</a></h4>
 

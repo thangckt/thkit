@@ -4182,7 +4182,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g779558089'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'ge025fe119'
 
   
       module-attribute
@@ -4198,7 +4198,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g779558089'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'ge025fe119'
 
   
       module-attribute
@@ -4390,7 +4390,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g779558089&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge025fe119&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4410,7 +4410,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g779558089&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge025fe119&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4876,14 +4876,14 @@ Args:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_yaml(jdata: dict, filename: str | Path) (thkit.io.write_yaml)" href="#thkit.io.write_yaml">write_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_yaml(jdata: dict[Any, Any] | list[Any], filename: str | Path) (thkit.io.write_yaml)" href="#thkit.io.write_yaml">write_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Write data to a YAML file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_yaml(filename: str | Path) -> dict (thkit.io.read_yaml)" href="#thkit.io.read_yaml">read_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_yaml(filename: str | Path) -> dict[Any, Any] | list[Any] (thkit.io.read_yaml)" href="#thkit.io.read_yaml">read_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read data from a YAML file.</p>
@@ -5209,7 +5209,7 @@ print(d.to_dict()) # plain dict</p>
 
 
 <h4 id="thkit.io.write_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span></code>
 
 <a href="#thkit.io.write_yaml" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5227,7 +5227,7 @@ print(d.to_dict()) # plain dict</p>
 
 
 <h4 id="thkit.io.read_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
 
 <a href="#thkit.io.read_yaml" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -7928,7 +7928,7 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            collect_files(paths: list[str], patterns: list[str]) -> list[str] (thkit.path.collect_files)" href="#thkit.path.collect_files">collect_files</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            collect_files(paths: list[str] | str, patterns: list[str]) -> list[str] (thkit.path.collect_files)" href="#thkit.path.collect_files">collect_files</a></code></b>
             –
             <div class="doc-md-description">
               <p>Collect files from a list of paths (files/folders). Will search files in folders and their subdirectories.</p>
@@ -8127,7 +8127,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.path.collect_files" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">collect_files</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">collect_files</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.collect_files" class="headerlink" title="Permanent link">&para;</a></h4>
 

@@ -2282,7 +2282,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str = '') -> logging.Logger (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str | None = None) -> ColorLogger (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Initialize the default logger under <code>log/</code>, if not provided</p>
@@ -2345,7 +2345,7 @@ Args:
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str = '') (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str | None = None) (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
             –
             <div class="doc-md-description">
               <p>Validate multiple machines configs.</p>
@@ -2484,7 +2484,7 @@ Args:
 
 
 <h5 id="thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -2781,7 +2781,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.jobman.helper.init_jobman_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ColorLogger</span></code>
 
 <a href="#thkit.jobman.helper.init_jobman_logger" class="headerlink" title="Permanent link">&para;</a></h4>
 

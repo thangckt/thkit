@@ -1439,7 +1439,7 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str | None = None, logfile: str | None = None, level: str = 'INFO', level_logfile: str | None = None) -> logging.Logger (thkit.pkg.create_logger)" href="../api/#thkit.pkg.create_logger">create_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str = '', logfile: str = '', level: str = 'INFO', level_logfile: str = '') -> logging.Logger (thkit.pkg.create_logger)" href="../api/#thkit.pkg.create_logger">create_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Create a logger that supports <code>color</code> argument per message, to colorize console output and plain-text logfile.</p>
@@ -1453,14 +1453,14 @@
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str | None = None, conda_channel: str | None = None) (thkit.pkg.check_package)" href="../api/#thkit.pkg.check_package">check_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str = '', conda_channel: str = '') (thkit.pkg.check_package)" href="../api/#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check if the required packages are installed</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str | None = None, conda_channel: str | None = None) -> None (thkit.pkg.install_package)" href="../api/#thkit.pkg.install_package">install_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str = '', conda_channel: str = '') -> None (thkit.pkg.install_package)" href="../api/#thkit.pkg.install_package">install_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Install the required package:</p>
@@ -1522,21 +1522,21 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            info(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.info)" href="../api/#thkit.pkg.ColorLogger.info">info</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            info(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.info)" href="../api/#thkit.pkg.ColorLogger.info">info</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            warning(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.warning)" href="../api/#thkit.pkg.ColorLogger.warning">warning</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            warning(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.warning)" href="../api/#thkit.pkg.ColorLogger.warning">warning</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            error(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.error)" href="../api/#thkit.pkg.ColorLogger.error">error</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            error(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.error)" href="../api/#thkit.pkg.ColorLogger.error">error</a></code></b>
             –
             <div class="doc-md-description">
               
@@ -1564,7 +1564,7 @@
 
 
 <h4 id="thkit.pkg.ColorLogger.info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.info" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -1580,7 +1580,7 @@
 
 
 <h4 id="thkit.pkg.ColorLogger.warning" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.warning" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -1596,7 +1596,7 @@
 
 
 <h4 id="thkit.pkg.ColorLogger.error" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.error" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -1621,7 +1621,7 @@
 
 
 <h3 id="thkit.pkg.create_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
 
 <a href="#thkit.pkg.create_logger" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1657,7 +1657,7 @@
 
 
 <h3 id="thkit.pkg.check_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.check_package" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1675,7 +1675,7 @@
 
 
 <h3 id="thkit.pkg.install_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thkit.pkg.install_package" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1706,7 +1706,7 @@
         <li class="doc-section-item field-body">
             <b><code>git_repo</code></b>
               (<code><span title="str">str</span></code>, default:
-                  <code>None</code>
+                  <code>&#39;&#39;</code>
 )
           –
           <div class="doc-md-description">
@@ -1716,7 +1716,7 @@
         <li class="doc-section-item field-body">
             <b><code>conda_channel</code></b>
               (<code><span title="str">str</span></code>, default:
-                  <code>None</code>
+                  <code>&#39;&#39;</code>
 )
           –
           <div class="doc-md-description">

@@ -1367,14 +1367,14 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_default_args(func: callable) -> dict (thkit.config.get_default_args)" href="../api/#thkit.config.get_default_args">get_default_args</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_default_args(func: Callable) -> dict (thkit.config.get_default_args)" href="../api/#thkit.config.get_default_args">get_default_args</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get dict of default values of arguments of a function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            argdict_to_schemadict(func: callable) -> dict (thkit.config.argdict_to_schemadict)" href="../api/#thkit.config.argdict_to_schemadict">argdict_to_schemadict</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            argdict_to_schemadict(func: Callable) -> dict (thkit.config.argdict_to_schemadict)" href="../api/#thkit.config.argdict_to_schemadict">argdict_to_schemadict</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a function's type-annotated arguments into a cerberus schema dict.</p>
@@ -1427,7 +1427,7 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -1470,7 +1470,7 @@
 
 
 <h4 id="thkit.config.Config.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -1631,7 +1631,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h3 id="thkit.config.get_default_args" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_default_args</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="nb">callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_default_args</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.config.get_default_args" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1640,7 +1640,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
         <p>Get dict of default values of arguments of a function
 Args:
-    func (callable): function to inspect</p>
+    func (Callable): function to inspect</p>
 
 
     </div>
@@ -1651,7 +1651,7 @@ Args:
 
 
 <h3 id="thkit.config.argdict_to_schemadict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">argdict_to_schemadict</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="nb">callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">argdict_to_schemadict</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.config.argdict_to_schemadict" class="headerlink" title="Permanent link">&para;</a></h3>
 

@@ -2282,7 +2282,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str | None = None) (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str = '') -> logging.Logger (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Initialize the default logger under <code>log/</code>, if not provided</p>
@@ -2345,7 +2345,7 @@ Args:
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str | None = None) (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str = '') (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
             –
             <div class="doc-md-description">
               <p>Validate multiple machines configs.</p>
@@ -2373,7 +2373,7 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -2484,7 +2484,7 @@ Args:
 
 
 <h5 id="thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -2602,7 +2602,7 @@ Args:
 
 
 <h5 id="thkit.jobman.helper.ConfigRemoteMachines.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -2781,7 +2781,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.jobman.helper.init_jobman_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
 
 <a href="#thkit.jobman.helper.init_jobman_logger" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -2847,14 +2847,14 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None) (thkit.jobman.submit.submit_job_chunk)" href="../api/#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: ColorLogger | None = None) (thkit.jobman.submit.submit_job_chunk)" href="../api/#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to submit a jobs to the remote machine. The function will:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None)
+            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: ColorLogger | None = None)
 
   
       async
@@ -2865,7 +2865,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            alff_submit_job_multi_remotes(mdict_list: list[dict], commandlist_list: list[list[str]], work_dir: str, task_dirs: list[str], forward_files: list[str], backward_files: list[str], forward_common_files: list[str] = [], backward_common_files: list[str] = [], logger: object = None)
+            <b><code><a class="autorefs autorefs-internal" title="            alff_submit_job_multi_remotes(mdict_list: list[dict], commandlist_list: list[list[str]], work_dir: str, task_dirs: list[str], forward_files: list[str], backward_files: list[str], forward_common_files: list[str] = [], backward_common_files: list[str] = [], logger: ColorLogger | None = None)
 
   
       async
@@ -2963,7 +2963,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.jobman.submit.submit_job_chunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.submit.submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -3055,7 +3055,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.jobman.submit.async_submit_job_chunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>
@@ -3087,7 +3087,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.jobman.submit.alff_submit_job_multi_remotes" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span><span class="n">mdict_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">commandlist_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">backward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span><span class="n">mdict_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">commandlist_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">backward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>

@@ -4145,7 +4145,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g8a50e5ea4'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g42ffec318'
 
   
       module-attribute
@@ -4161,7 +4161,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g8a50e5ea4'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g42ffec318'
 
   
       module-attribute
@@ -4353,7 +4353,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g8a50e5ea4&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g42ffec318&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4373,7 +4373,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g8a50e5ea4&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g42ffec318&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4437,14 +4437,14 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_default_args(func: callable) -> dict (thkit.config.get_default_args)" href="#thkit.config.get_default_args">get_default_args</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_default_args(func: Callable) -> dict (thkit.config.get_default_args)" href="#thkit.config.get_default_args">get_default_args</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get dict of default values of arguments of a function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            argdict_to_schemadict(func: callable) -> dict (thkit.config.argdict_to_schemadict)" href="#thkit.config.argdict_to_schemadict">argdict_to_schemadict</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            argdict_to_schemadict(func: Callable) -> dict (thkit.config.argdict_to_schemadict)" href="#thkit.config.argdict_to_schemadict">argdict_to_schemadict</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a function's type-annotated arguments into a cerberus schema dict.</p>
@@ -4497,7 +4497,7 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -4540,7 +4540,7 @@
 
 
 <h5 id="thkit.config.Config.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -4692,7 +4692,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.config.Config._load_jsonc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_load_jsonc</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_load_jsonc</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -4723,7 +4723,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.config.get_default_args" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_default_args</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="nb">callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_default_args</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.config.get_default_args" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4732,7 +4732,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
         <p>Get dict of default values of arguments of a function
 Args:
-    func (callable): function to inspect</p>
+    func (Callable): function to inspect</p>
 
 
     </div>
@@ -4743,7 +4743,7 @@ Args:
 
 
 <h4 id="thkit.config.argdict_to_schemadict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">argdict_to_schemadict</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="nb">callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">argdict_to_schemadict</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.config.argdict_to_schemadict" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4867,7 +4867,7 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            download_rawtext(url: str, outfile: str = None) -> str (thkit.io.download_rawtext)" href="#thkit.io.download_rawtext">download_rawtext</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            download_rawtext(url: str, outfile: str = '') -> str (thkit.io.download_rawtext)" href="#thkit.io.download_rawtext">download_rawtext</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download raw text from a URL.</p>
@@ -5275,7 +5275,7 @@ print(d.to_dict()) # plain dict</p>
 
 
 <h4 id="thkit.io.download_rawtext" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_rawtext</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_rawtext</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.io.download_rawtext" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5820,7 +5820,7 @@ REF: <a href="https://stackoverflow.com/questions/2440692/formatting-floats-with
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str | None = None) (thkit.jobman.helper.init_jobman_logger)" href="#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str = '') -> logging.Logger (thkit.jobman.helper.init_jobman_logger)" href="#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Initialize the default logger under <code>log/</code>, if not provided</p>
@@ -5883,7 +5883,7 @@ Args:
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str | None = None) (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            validate_machine_config(schema_file: str = '') (thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config)" href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config">validate_machine_config</a></code></b>
             –
             <div class="doc-md-description">
               <p>Validate multiple machines configs.</p>
@@ -5911,7 +5911,7 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict = None, config_file: str = None, schema_dict: dict = None, schema_file: str = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -6022,7 +6022,7 @@ Args:
 
 
 <h6 id="thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate_machine_config</span><span class="p">(</span><span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.helper.ConfigRemoteMachines.validate_machine_config" class="headerlink" title="Permanent link">&para;</a></h6>
 
@@ -6140,7 +6140,7 @@ Args:
 
 
 <h6 id="thkit.jobman.helper.ConfigRemoteMachines.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -6292,7 +6292,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h6 id="thkit.jobman.helper.ConfigRemoteMachines._load_jsonc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_load_jsonc</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_load_jsonc</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -6341,7 +6341,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.jobman.helper.init_jobman_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">init_jobman_logger</span><span class="p">(</span><span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
 
 <a href="#thkit.jobman.helper.init_jobman_logger" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -6407,14 +6407,14 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None) (thkit.jobman.submit.submit_job_chunk)" href="#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: ColorLogger | None = None) (thkit.jobman.submit.submit_job_chunk)" href="#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to submit a jobs to the remote machine. The function will:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: object = None)
+            <b><code><a class="autorefs autorefs-internal" title="            async_submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: ColorLogger | None = None)
 
   
       async
@@ -6425,7 +6425,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            alff_submit_job_multi_remotes(mdict_list: list[dict], commandlist_list: list[list[str]], work_dir: str, task_dirs: list[str], forward_files: list[str], backward_files: list[str], forward_common_files: list[str] = [], backward_common_files: list[str] = [], logger: object = None)
+            <b><code><a class="autorefs autorefs-internal" title="            alff_submit_job_multi_remotes(mdict_list: list[dict], commandlist_list: list[list[str]], work_dir: str, task_dirs: list[str], forward_files: list[str], backward_files: list[str], forward_common_files: list[str] = [], backward_common_files: list[str] = [], logger: ColorLogger | None = None)
 
   
       async
@@ -6601,7 +6601,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.jobman.submit.submit_job_chunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.jobman.submit.submit_job_chunk" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -6752,7 +6752,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.jobman.submit.async_submit_job_chunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">async_submit_job_chunk</span><span class="p">(</span><span class="n">mdict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Task</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">machine_index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>
@@ -6944,7 +6944,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.jobman.submit.alff_submit_job_multi_remotes" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span><span class="n">mdict_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">commandlist_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">backward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">logger</span><span class="p">:</span> <span class="nb">object</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">alff_submit_job_multi_remotes</span><span class="p">(</span><span class="n">mdict_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">commandlist_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">work_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_dirs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">backward_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">forward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">backward_common_files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">logger</span><span class="p">:</span> <span class="n">ColorLogger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>
@@ -7112,7 +7112,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            compute_eta(num_iters: int, iter_index: int, old_time: float | None = None, new_time: float | None = None, width: int = None) -> str
+            <b><code><a class="autorefs autorefs-internal" title="            compute_eta(num_iters: int, iter_index: int, old_time: float | None = None, new_time: float | None = None, width: int | None = None) -> str
 
   
       staticmethod
@@ -7180,7 +7180,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h5 id="thkit.markup.ThangBar.compute_eta" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_eta</span><span class="p">(</span><span class="n">num_iters</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">iter_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">old_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">new_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_eta</span><span class="p">(</span><span class="n">num_iters</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">iter_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">old_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">new_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -8156,7 +8156,7 @@ patterns : list[str]
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str | None = None, logfile: str | None = None, level: str = 'INFO', level_logfile: str | None = None) -> logging.Logger (thkit.pkg.create_logger)" href="#thkit.pkg.create_logger">create_logger</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            create_logger(name: str = '', logfile: str = '', level: str = 'INFO', level_logfile: str = '') -> logging.Logger (thkit.pkg.create_logger)" href="#thkit.pkg.create_logger">create_logger</a></code></b>
             –
             <div class="doc-md-description">
               <p>Create a logger that supports <code>color</code> argument per message, to colorize console output and plain-text logfile.</p>
@@ -8170,14 +8170,14 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str | None = None, conda_channel: str | None = None) (thkit.pkg.check_package)" href="#thkit.pkg.check_package">check_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str = '', conda_channel: str = '') (thkit.pkg.check_package)" href="#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check if the required packages are installed</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str | None = None, conda_channel: str | None = None) -> None (thkit.pkg.install_package)" href="#thkit.pkg.install_package">install_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str = '', conda_channel: str = '') -> None (thkit.pkg.install_package)" href="#thkit.pkg.install_package">install_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Install the required package:</p>
@@ -8239,21 +8239,21 @@ patterns : list[str]
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            info(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.info)" href="#thkit.pkg.ColorLogger.info">info</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            info(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.info)" href="#thkit.pkg.ColorLogger.info">info</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            warning(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.warning)" href="#thkit.pkg.ColorLogger.warning">warning</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            warning(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.warning)" href="#thkit.pkg.ColorLogger.warning">warning</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            error(msg, *args, color=None, **kwargs) (thkit.pkg.ColorLogger.error)" href="#thkit.pkg.ColorLogger.error">error</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            error(msg, *args, color: str = '', **kwargs) (thkit.pkg.ColorLogger.error)" href="#thkit.pkg.ColorLogger.error">error</a></code></b>
             –
             <div class="doc-md-description">
               
@@ -8281,7 +8281,7 @@ patterns : list[str]
 
 
 <h5 id="thkit.pkg.ColorLogger._log_with_color" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_log_with_color</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">_log_with_color</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger._log_with_color" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -8297,7 +8297,7 @@ patterns : list[str]
 
 
 <h5 id="thkit.pkg.ColorLogger.info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.info" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -8313,7 +8313,7 @@ patterns : list[str]
 
 
 <h5 id="thkit.pkg.ColorLogger.warning" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.warning" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -8329,7 +8329,7 @@ patterns : list[str]
 
 
 <h5 id="thkit.pkg.ColorLogger.error" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.ColorLogger.error" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -8354,7 +8354,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.create_logger" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span></code>
 
 <a href="#thkit.pkg.create_logger" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8390,7 +8390,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.check_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
 
 <a href="#thkit.pkg.check_package" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8408,7 +8408,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.pkg.install_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thkit.pkg.install_package" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8439,7 +8439,7 @@ patterns : list[str]
         <li class="doc-section-item field-body">
             <b><code>git_repo</code></b>
               (<code><span title="str">str</span></code>, default:
-                  <code>None</code>
+                  <code>&#39;&#39;</code>
 )
           –
           <div class="doc-md-description">
@@ -8449,7 +8449,7 @@ patterns : list[str]
         <li class="doc-section-item field-body">
             <b><code>conda_channel</code></b>
               (<code><span title="str">str</span></code>, default:
-                  <code>None</code>
+                  <code>&#39;&#39;</code>
 )
           –
           <div class="doc-md-description">
@@ -8527,14 +8527,14 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            composite_range(list_inputs: list[int | float | str], tol=1e-06) -> list[float] (thkit.range.composite_range)" href="#thkit.range.composite_range">composite_range</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            composite_range(list_inputs: list[float | str], tol=1e-06) -> list[float] (thkit.range.composite_range)" href="#thkit.range.composite_range">composite_range</a></code></b>
             –
             <div class="doc-md-description">
               <p>A custom parser to allow define composite ranges. This is needed for defining input parameters in YAML files.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            composite_index(list_inputs: list[int | str]) -> list[int] (thkit.range.composite_index)" href="#thkit.range.composite_index">composite_index</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            composite_index(list_inputs: list[float | str]) -> list[int] (thkit.range.composite_index)" href="#thkit.range.composite_index">composite_index</a></code></b>
             –
             <div class="doc-md-description">
               <p>Allow define composite index ranges.</p>
@@ -8593,7 +8593,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.range.composite_range" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_range</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_range</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
 
 <a href="#thkit.range.composite_range" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8635,7 +8635,7 @@ patterns : list[str]
 
 
 <h4 id="thkit.range.composite_index" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_index</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_index</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
 
 <a href="#thkit.range.composite_index" class="headerlink" title="Permanent link">&para;</a></h4>
 

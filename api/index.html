@@ -605,6 +605,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -700,6 +706,75 @@
   
   <span class="md-ellipsis">
     io
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    markup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    log
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../range/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    range
     
   </span>
   
@@ -4182,7 +4257,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'ge025fe119'
+          <b><code><a class="autorefs autorefs-internal" title="            commit_id: COMMIT_ID = 'g8e9a368a6'
 
   
       module-attribute
@@ -4198,7 +4273,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'ge025fe119'
+          <b><code><a class="autorefs autorefs-internal" title="            __commit_id__: COMMIT_ID = 'g8e9a368a6'
 
   
       module-attribute
@@ -4390,7 +4465,7 @@
 
 
 <h4 id="thkit._version.commit_id" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge025fe119&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">commit_id</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g8e9a368a6&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4410,7 +4485,7 @@
 
 
 <h4 id="thkit._version.__commit_id__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;ge025fe119&#39;</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">__commit_id__</span><span class="p">:</span> <span class="n">COMMIT_ID</span> <span class="o">=</span> <span class="s1">&#39;g8e9a368a6&#39;</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -8635,7 +8710,7 @@ patterns : list[str]
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            chunk_list(input_list: list, n: int) -> Generator (thkit.range.chunk_list)" href="#thkit.range.chunk_list">chunk_list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            chunk_list(input_list: list, chunk_size: int) -> Generator (thkit.range.chunk_list)" href="#thkit.range.chunk_list">chunk_list</a></code></b>
             –
             <div class="doc-md-description">
               <p>Yield successive n-sized chunks from <code>input_list</code>.</p>
@@ -8775,14 +8850,17 @@ Notes:
 
 
 <h4 id="thkit.range.chunk_list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">chunk_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">chunk_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span></code>
 
 <a href="#thkit.range.chunk_list" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Yield successive n-sized chunks from <code>input_list</code>.</p>
+        <p>Yield successive n-sized chunks from <code>input_list</code>.
+Args:
+    input_list (list): Input list to be chunked.
+    chunk_size (int): Chunk size (number of elements per chunk).</p>
 
 
     </div>

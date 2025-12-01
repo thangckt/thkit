@@ -7551,7 +7551,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            make_dir(path: str, backup: bool = True) (thkit.path.make_dir)" href="#thkit.path.make_dir">make_dir</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            make_dir(path: str | Path, backup: bool = True) (thkit.path.make_dir)" href="#thkit.path.make_dir">make_dir</a></code></b>
             –
             <div class="doc-md-description">
               <p>Create a directory with a backup option.</p>
@@ -7579,7 +7579,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: list[str], patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: list[str] | str, patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
             –
             <div class="doc-md-description">
               <p>List all files/folders in given directories and their subdirectories that match the given patterns.</p>
@@ -7669,7 +7669,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.path.make_dir" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">backup</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">,</span> <span class="n">backup</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span></code>
 
 <a href="#thkit.path.make_dir" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -7745,7 +7745,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.path.list_paths" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.list_paths" class="headerlink" title="Permanent link">&para;</a></h4>
 

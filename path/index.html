@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../range/">
+        <link rel="prev" href="../io/">
       
       
         <link rel="next" href="../pkg/">
@@ -630,12 +630,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -750,90 +744,6 @@
     
   
     io
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../markup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    markup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    log
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../range/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    range
   
 
     
@@ -1337,7 +1247,7 @@
   <span class="md-ellipsis">
     
   
-    API reference
+    API
   
 
     
@@ -1932,7 +1842,6 @@
 
     <div class="doc doc-contents first">
 
-          
 
 
 
@@ -1947,7 +1856,7 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            make_dir(path: str | Path, backup: bool = True) (thkit.path.make_dir)" href="../api/#thkit.path.make_dir">make_dir</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            make_dir(path: str, backup: bool = True) (thkit.path.make_dir)" href="../api/#thkit.path.make_dir">make_dir</a></code></b>
             –
             <div class="doc-md-description">
               <p>Create a directory with a backup option.</p>
@@ -1975,14 +1884,14 @@
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: list[str] | str, patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="../api/#thkit.path.list_paths">list_paths</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: list[str], patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="../api/#thkit.path.list_paths">list_paths</a></code></b>
             –
             <div class="doc-md-description">
               <p>List all files/folders in given directories and their subdirectories that match the given patterns.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            collect_files(paths: list[str] | str, patterns: list[str]) -> list[str] (thkit.path.collect_files)" href="../api/#thkit.path.collect_files">collect_files</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            collect_files(paths: list[str], patterns: list[str]) -> list[str] (thkit.path.collect_files)" href="../api/#thkit.path.collect_files">collect_files</a></code></b>
             –
             <div class="doc-md-description">
               <p>Collect files from a list of paths (files/folders). Will search files in folders and their subdirectories.</p>
@@ -1992,7 +1901,7 @@
             <b><code><a class="autorefs autorefs-internal" title="            change_pathname(paths: list[str], old_string: str, new_string: str, replace: bool = False) -> None (thkit.path.change_pathname)" href="../api/#thkit.path.change_pathname">change_pathname</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Change path names.</p>
+              <p>change path names</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -2065,7 +1974,7 @@
 
 
 <h3 id="thkit.path.make_dir" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">,</span> <span class="n">backup</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">make_dir</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">backup</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span></code>
 
 <a href="#thkit.path.make_dir" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2074,7 +1983,6 @@
 
         <p>Create a directory with a backup option.</p>
 
-          
 
     </div>
 
@@ -2093,7 +2001,6 @@
 
         <p>Make a directory and ask for backup if the directory already exists.</p>
 
-          
 
     </div>
 
@@ -2112,7 +2019,6 @@
 
         <p>Ask user for a yes/no/backup response.</p>
 
-          
 
     </div>
 
@@ -2131,7 +2037,6 @@
 
         <p>Ask user a yes/no question and return the normalized choice.</p>
 
-          
 
     </div>
 
@@ -2141,7 +2046,7 @@
 
 
 <h3 id="thkit.path.list_paths" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.list_paths" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2176,7 +2081,6 @@ patterns : list[str]
 <li>IMPORTANT: "<strong>/</strong>" will replicate the behavior of "**", then give unexpected results.</li>
 </ul>
 
-          
 
     </div>
 
@@ -2186,7 +2090,7 @@ patterns : list[str]
 
 
 <h3 id="thkit.path.collect_files" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">collect_files</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">collect_files</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.collect_files" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2202,7 +2106,6 @@ patterns : list[str]
 <h5 id="thkit.path.collect_files--returns">Returns:<a class="headerlink" href="#thkit.path.collect_files--returns" title="Permanent link">&para;</a></h5>
 <p>List[str]: A list of paths matching files.</p>
 
-          
 
     </div>
 
@@ -2219,14 +2122,14 @@ patterns : list[str]
 
     <div class="doc doc-contents ">
 
-        <p>Change path names.</p>
+        <p>change path names</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>paths</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>)
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>)
           –
           <div class="doc-md-description">
             <p>paths to the files/dirs</p>
@@ -2234,7 +2137,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>old_string</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
             <p>old string in path name</p>
@@ -2242,7 +2145,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>new_string</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
             <p>new string in path name</p>
@@ -2250,7 +2153,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>replace</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>, default:
+              (<code><span title="bool">bool</span></code>, default:
                   <code>False</code>
 )
           –
@@ -2260,7 +2163,6 @@ patterns : list[str]
         </li>
     </ul>
 
-          
 
     </div>
 
@@ -2284,7 +2186,7 @@ patterns : list[str]
     <ul>
         <li class="doc-section-item field-body">
             <b><code>files</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>)
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>)
           –
           <div class="doc-md-description">
             <p>list of file paths</p>
@@ -2292,7 +2194,6 @@ patterns : list[str]
         </li>
     </ul>
 
-          
 
     </div>
 
@@ -2316,7 +2217,7 @@ patterns : list[str]
     <ul>
         <li class="doc-section-item field-body">
             <b><code>dirs</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>)
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>)
           –
           <div class="doc-md-description">
             <p>list of directories to remove.</p>
@@ -2324,7 +2225,6 @@ patterns : list[str]
         </li>
     </ul>
 
-          
 
     </div>
 
@@ -2343,7 +2243,6 @@ patterns : list[str]
 
         <p>Remove files in the <code>files</code> list in the <code>paths</code> list.</p>
 
-          
 
     </div>
 
@@ -2362,7 +2261,6 @@ patterns : list[str]
 
         <p>Remove directories in the <code>dirs</code> list in the <code>paths</code> list.</p>
 
-          
 
     </div>
 
@@ -2381,7 +2279,6 @@ patterns : list[str]
 
         <p>Copy a file/folder from the <code>source path</code> to the <code>destination path</code>. It will create the destination directory if it does not exist.</p>
 
-          
 
     </div>
 
@@ -2400,7 +2297,6 @@ patterns : list[str]
 
         <p>Move a file/folder from the source path to the destination path.</p>
 
-          
 
     </div>
 
@@ -2424,7 +2320,7 @@ patterns : list[str]
     <ul>
         <li class="doc-section-item field-body">
             <b><code>dirs</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>)
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>)
           –
           <div class="doc-md-description">
             <p>List of directory paths to scan.</p>
@@ -2432,7 +2328,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>has_files</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>, default:
+              (<code><span title="list">list</span>[<span title="str">str</span>] | None</code>, default:
                   <code>None</code>
 )
           –
@@ -2442,7 +2338,7 @@ patterns : list[str]
         </li>
         <li class="doc-section-item field-body">
             <b><code>no_files</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>, default:
+              (<code><span title="list">list</span>[<span title="str">str</span>] | None</code>, default:
                   <code>None</code>
 )
           –
@@ -2456,7 +2352,7 @@ patterns : list[str]
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+              <code><span title="list">list</span>[<span title="str">str</span>]</code>
           –
           <div class="doc-md-description">
             <p>List of directory paths meeting the conditions.</p>
@@ -2464,7 +2360,6 @@ patterns : list[str]
         </li>
     </ul>
 
-          
 
     </div>
 
@@ -2514,7 +2409,7 @@ patterns : list[str]
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../range/" class="md-footer__link md-footer__link--prev" aria-label="Previous: range">
+          <a href="../io/" class="md-footer__link md-footer__link--prev" aria-label="Previous: io">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2524,7 +2419,7 @@ patterns : list[str]
                 Previous
               </span>
               <div class="md-ellipsis">
-                range
+                io
               </div>
             </div>
           </a>

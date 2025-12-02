@@ -14,7 +14,7 @@
         <link rel="prev" href="../config/">
       
       
-        <link rel="next" href="../markup/">
+        <link rel="next" href="../path/">
       
       
         
@@ -630,12 +630,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -1012,90 +1006,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../markup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    markup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    log
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../range/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    range
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../path/" class="md-nav__link">
         
   
@@ -1287,7 +1197,7 @@
   <span class="md-ellipsis">
     
   
-    API reference
+    API
   
 
     
@@ -1832,7 +1742,6 @@
 
     <div class="doc doc-contents first">
 
-          
 
 
 
@@ -1859,14 +1768,14 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_yaml(jdata: dict[Any, Any] | list[Any], filename: str | Path) (thkit.io.write_yaml)" href="../api/#thkit.io.write_yaml">write_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_yaml(jdata: dict, filename: str | Path) (thkit.io.write_yaml)" href="../api/#thkit.io.write_yaml">write_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Write data to a YAML file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_yaml(filename: str | Path) -> dict[Any, Any] | list[Any] (thkit.io.read_yaml)" href="../api/#thkit.io.read_yaml">read_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_yaml(filename: str | Path) -> dict (thkit.io.read_yaml)" href="../api/#thkit.io.read_yaml">read_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read data from a YAML file.</p>
@@ -1876,7 +1785,7 @@
             <b><code><a class="autorefs autorefs-internal" title="            combine_text_files(files: list[str], output_file: str, chunk_size: int = 1024) (thkit.io.combine_text_files)" href="../api/#thkit.io.combine_text_files">combine_text_files</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Combine text files into a single file in a memory-efficient.</p>
+              <p>Combine text files into a single file in a memory-efficient. Read and write in chunks to avoid loading large files into memory</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -1897,35 +1806,35 @@
             <b><code><a class="autorefs autorefs-internal" title="            txt2str(file_path: str | Path) -> str (thkit.io.txt2str)" href="../api/#thkit.io.txt2str">txt2str</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert a text file to a string.</p>
+              <p>Convert a text file to a string</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            str2txt(text: str, file_path: str | Path) -> None (thkit.io.str2txt)" href="../api/#thkit.io.str2txt">str2txt</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert a string to a text file.</p>
+              <p>Convert a string to a text file</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            txt2list(file_path: str | Path) -> list[str] (thkit.io.txt2list)" href="../api/#thkit.io.txt2list">txt2list</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert a text file to a list of lines (without newline characters).</p>
+              <p>Convert a text file to a list of lines (without newline characters)</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            list2txt(lines: list[str], file_path: str | Path) -> None (thkit.io.list2txt)" href="../api/#thkit.io.list2txt">list2txt</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert a list of lines to a text file.</p>
+              <p>Convert a list of lines to a text file</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            float2str(number: float, decimals=6) (thkit.io.float2str)" href="../api/#thkit.io.float2str">float2str</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert float number to str.</p>
+              <p>convert float number to str</p>
             </div>
           </li>
     </ul>
@@ -1956,7 +1865,7 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code></p>
+              Bases: <code><span title="dict">dict</span></code></p>
 
 
 
@@ -1968,7 +1877,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>dct</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>, default:
+              (<code><span title="dict">dict</span></code>, default:
                   <code>None</code>
 )
           –
@@ -1988,7 +1897,6 @@ d.b.d[1].e = 42
 print(d.b.d[1].e)  # 42
 print(d.to_dict()) # plain dict</p>
 </details>
-          
 
 
 
@@ -2084,7 +1992,6 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-          
     </div>
 
 </div>
@@ -2106,7 +2013,6 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-          
     </div>
 
 </div>
@@ -2127,7 +2033,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Set item using dot notation or standard dict syntax.</p>
 
-          
 
     </div>
 
@@ -2144,7 +2049,6 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-          
 
     </div>
 
@@ -2163,7 +2067,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Recursively convert DotDict back to plain dict.</p>
 
-          
 
     </div>
 
@@ -2182,7 +2085,7 @@ print(d.to_dict()) # plain dict</p>
 
 
 <h3 id="thkit.io.write_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span></code>
 
 <a href="#thkit.io.write_yaml" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2191,7 +2094,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Write data to a YAML file.</p>
 
-          
 
     </div>
 
@@ -2201,7 +2103,7 @@ print(d.to_dict()) # plain dict</p>
 
 
 <h3 id="thkit.io.read_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.io.read_yaml" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2210,7 +2112,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Read data from a YAML file.</p>
 
-          
 
     </div>
 
@@ -2227,15 +2128,14 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Combine text files into a single file in a memory-efficient.</p>
-<p>Read and write in chunks to avoid loading large files into memory</p>
+        <p>Combine text files into a single file in a memory-efficient. Read and write in chunks to avoid loading large files into memory</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>files</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>)
+              (<code><span title="list">list</span>[<span title="str">str</span>]</code>)
           –
           <div class="doc-md-description">
             <p>List of file paths to combine.</p>
@@ -2243,7 +2143,7 @@ print(d.to_dict()) # plain dict</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>output_file</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
             <p>Path to the output file.</p>
@@ -2251,7 +2151,7 @@ print(d.to_dict()) # plain dict</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>chunk_size</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>, default:
+              (<code><span title="int">int</span></code>, default:
                   <code>1024</code>
 )
           –
@@ -2261,7 +2161,6 @@ print(d.to_dict()) # plain dict</p>
         </li>
     </ul>
 
-          
 
     </div>
 
@@ -2280,7 +2179,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Unpack one level of nested dictionary.</p>
 
-          
 
     </div>
 
@@ -2299,7 +2197,6 @@ print(d.to_dict()) # plain dict</p>
 
         <p>Download raw text from a URL.</p>
 
-          
 
     </div>
 
@@ -2316,9 +2213,8 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Convert a text file to a string.</p>
+        <p>Convert a text file to a string</p>
 
-          
 
     </div>
 
@@ -2335,9 +2231,8 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Convert a string to a text file.</p>
+        <p>Convert a string to a text file</p>
 
-          
 
     </div>
 
@@ -2354,9 +2249,8 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Convert a text file to a list of lines (without newline characters).</p>
+        <p>Convert a text file to a list of lines (without newline characters)</p>
 
-          
 
     </div>
 
@@ -2373,9 +2267,8 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Convert a list of lines to a text file.</p>
+        <p>Convert a list of lines to a text file</p>
 
-          
 
     </div>
 
@@ -2392,27 +2285,26 @@ print(d.to_dict()) # plain dict</p>
 
     <div class="doc doc-contents ">
 
-        <p>Convert float number to str.</p>
+        <p>convert float number to str
+REF: <a href="https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros">https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros</a></p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>number</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></code>)
+              (<code><span title="float">float</span></code>)
           –
           <div class="doc-md-description">
             <p>float number</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-            <b><code>decimals</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>, default:
-                  <code>6</code>
-)
+            <b><code>fmt</code></b>
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
-            <p>number of decimal places</p>
+            <p>format of the output string</p>
           </div>
         </li>
     </ul>
@@ -2421,7 +2313,7 @@ print(d.to_dict()) # plain dict</p>
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>s</code></b> (              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+<b><code>s</code></b> (              <code><span title="str">str</span></code>
 )          –
           <div class="doc-md-description">
             <p>string of the float number</p>
@@ -2429,14 +2321,6 @@ print(d.to_dict()) # plain dict</p>
         </li>
     </ul>
 
-
-<details class="notes" open>
-  <summary>Notes</summary>
-  <ul>
-<li>Refer <a href="https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros">https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros</a></li>
-</ul>
-</details>
-          
 
     </div>
 
@@ -2503,13 +2387,13 @@ print(d.to_dict()) # plain dict</p>
         
         
           
-          <a href="../markup/" class="md-footer__link md-footer__link--next" aria-label="Next: markup">
+          <a href="../path/" class="md-footer__link md-footer__link--next" aria-label="Next: path">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                markup
+                path
               </div>
             </div>
             <div class="md-footer__button md-icon">

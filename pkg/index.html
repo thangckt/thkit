@@ -630,12 +630,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -750,90 +744,6 @@
     
   
     io
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../markup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    markup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    log
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../range/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    range
   
 
     
@@ -1138,7 +1048,7 @@
   <span class="md-ellipsis">
     
   
-    API reference
+    API
   
 
     
@@ -1534,7 +1444,6 @@
 
     <div class="doc doc-contents first">
 
-          
 
 
 
@@ -1552,21 +1461,21 @@
             <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str | None = None, conda_channel: str | None = None) (thkit.pkg.check_package)" href="../api/#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Check if the required packages are installed.</p>
+              <p>Check if the required packages are installed</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str | None = None, conda_channel: str | None = None) -> None (thkit.pkg.install_package)" href="../api/#thkit.pkg.install_package">install_package</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Install the required package.</p>
+              <p>Install the required package:</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            dependency_info(packages=['numpy', 'polars', 'thkit', 'ase']) -> str (thkit.pkg.dependency_info)" href="../api/#thkit.pkg.dependency_info">dependency_info</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Get the dependency information.</p>
+              <p>Get the dependency information</p>
             </div>
           </li>
     </ul>
@@ -1597,9 +1506,8 @@
 
     <div class="doc doc-contents ">
 
-        <p>Check if the required packages are installed.</p>
+        <p>Check if the required packages are installed</p>
 
-          
 
     </div>
 
@@ -1616,14 +1524,22 @@
 
     <div class="doc doc-contents ">
 
-        <p>Install the required package.</p>
 
+
+<details class="install-the-required-package" open>
+  <summary>Install the required package</summary>
+  <ul>
+<li>Default using: <code>pip install -U {package_name}</code></li>
+<li>If <code>git_repo</code> is provided: <code>pip install -U git+{git_repo}</code></li>
+<li>If <code>conda_channel</code> is provided: <code>conda install -c {conda_channel} {package_name}</code></li>
+</ul>
+</details>
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>package_name</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+              (<code><span title="str">str</span></code>)
           –
           <div class="doc-md-description">
             <p>package name</p>
@@ -1631,7 +1547,7 @@
         </li>
         <li class="doc-section-item field-body">
             <b><code>git_repo</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
+              (<code><span title="str">str</span></code>, default:
                   <code>None</code>
 )
           –
@@ -1641,7 +1557,7 @@
         </li>
         <li class="doc-section-item field-body">
             <b><code>conda_channel</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
+              (<code><span title="str">str</span></code>, default:
                   <code>None</code>
 )
           –
@@ -1651,16 +1567,6 @@
         </li>
     </ul>
 
-
-<details class="notes" open>
-  <summary>Notes</summary>
-  <ul>
-<li>Default using: <code>pip install -U {package_name}</code></li>
-<li>If <code>git_repo</code> is provided: <code>pip install -U git+{git_repo}</code></li>
-<li>If <code>conda_channel</code> is provided: <code>conda install -c {conda_channel} {package_name}</code></li>
-</ul>
-</details>
-          
 
     </div>
 
@@ -1677,29 +1583,13 @@
 
     <div class="doc doc-contents ">
 
-        <p>Get the dependency information.</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-            <b><code>packages</code></b>
-              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>, default:
-                  <code>[&#39;numpy&#39;, &#39;polars&#39;, &#39;thkit&#39;, &#39;ase&#39;]</code>
-)
-          –
-          <div class="doc-md-description">
-            <p>list of package names</p>
-          </div>
-        </li>
-    </ul>
+        <p>Get the dependency information</p>
 
 
 <details class="note" open>
   <summary>Note</summary>
   <p>Use <code>importlib</code> instead of <code>__import__</code> for clarity.</p>
 </details>
-          
 
     </div>
 

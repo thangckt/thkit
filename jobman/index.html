@@ -630,6 +630,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -762,10 +768,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-reference" class="md-nav__link">
+  <a href="#api-reference-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        API Reference:
+        API reference Reference:
       
     </span>
   </a>
@@ -1160,6 +1166,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../markup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    markup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../range/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    range
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../path/" class="md-nav__link">
         
   
@@ -1351,7 +1441,7 @@
   <span class="md-ellipsis">
     
   
-    API
+    API reference
   
 
     
@@ -1691,10 +1781,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-reference" class="md-nav__link">
+  <a href="#api-reference-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        API Reference:
+        API reference Reference:
       
     </span>
   </a>
@@ -2131,7 +2221,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
     - Setting remote machines follow the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>.
     - Can import from <code>jobman</code> these classes: <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/machine.html">Machine</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/resources.html">Resources</a>, <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/api/dpdispatcher.html#dpdispatcher.Submission">Submission</a>.
     - To handle if some tasks is finished and some tasks are not finished, see the function <a href="https://github.com/deepmodeling/dpdispatcher/blob/d55b3c3435a6b4cb8e200682a39a3418fd04d922/dpdispatcher/entrypoints/submission.py#L9">handle_submission()</a></p>
-<h2 id="api-reference">API Reference:<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h2>
+<h2 id="api-reference-reference">API reference Reference:<a class="headerlink" href="#api-reference-reference" title="Permanent link">&para;</a></h2>
 
 
 <div class="doc doc-object doc-module">
@@ -2146,6 +2236,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
     <div class="doc doc-contents first">
 
+          
 
 
 
@@ -2210,6 +2301,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
     <div class="doc doc-contents ">
 
+          
 
 
 
@@ -2309,6 +2401,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -2329,6 +2422,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -2359,7 +2453,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>mdict</code></b>
-              (<code><span title="dict">dict</span></code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>)
           –
           <div class="doc-md-description">
             <p>a dictionary contain settings of the remote machine. The parameters described in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>. This dictionary defines the login information, resources, execution command, etc. on the remote machine.</p>
@@ -2367,7 +2461,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>task_list</code></b>
-              (<code><span title="list">list</span>[<span title="dpdispatcher.Task">Task</span>]</code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<span title="dpdispatcher.Task">Task</span>]</code>)
           –
           <div class="doc-md-description">
             <p>a list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects. Each task object contains the command to be executed on the remote machine, and the files to be copied to and from the remote machine. The dirs of each task must be relative to the <code>work_dir</code>.</p>
@@ -2375,7 +2469,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>forward_common_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>, default:
                   <code>[]</code>
 )
           –
@@ -2385,7 +2479,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>backward_common_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>, default:
                   <code>[]</code>
 )
           –
@@ -2395,7 +2489,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>machine_index</code></b>
-              (<code><span title="int">int</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>, default:
                   <code>0</code>
 )
           –
@@ -2405,7 +2499,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
         </li>
         <li class="doc-section-item field-body">
             <b><code>logger</code></b>
-              (<code><span title="object">object</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#object">object</a></code>, default:
                   <code>None</code>
 )
           –
@@ -2423,6 +2517,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 <li>Should not use the <code>Local</code> contexts, it will interference the current shell environment which leads to the unexpected behavior on local machine. Instead, use another account to connect local machine with <code>SSH</code> context.</li>
 </ul>
 </details>
+          
 
     </div>
 
@@ -2453,6 +2548,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 <li>If the 'event loop is blocked' by a asynchronous function (it will not yield control to event loop), the async function will wait for the completion of the synchronous function. So, the async function will not be executed asynchronously. Try to use <code>await asyncio.to_thread()</code> to run the synchronous function in a separate thread, so that the event loop is not blocked.</li>
 </ul>
 </details>
+          
 
     </div>
 
@@ -2475,6 +2571,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
         <p>Revised version of <code>async_submit_job_chunk()</code> with <code>tqdm</code> progress bar.</p>
 
+          
 
     </div>
 
@@ -2500,6 +2597,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
     <div class="doc doc-contents ">
 
+          
 
 
 
@@ -2536,7 +2634,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
             <b><code><a class="autorefs autorefs-internal" title="            init_jobman_logger(logfile: str | None = None) -> ColorLogger (thkit.jobman.helper.init_jobman_logger)" href="../api/#thkit.jobman.helper.init_jobman_logger">init_jobman_logger</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Initialize the default logger under <code>log/</code>, if not provided</p>
+              <p>Initialize the default logger under <code>log/</code> if not provided.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -2578,10 +2676,22 @@ That's it! <code>jobman</code> will handle the rest.</p>
 
 
 
-        <p>Class for remote machine configuration files.
-Args:
-    machines_file (str): path to the YAML file contains multiple machines configs.</p>
+        <p>Class for remote machine configuration files.</p>
 
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>machines_file</code></b>
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+          –
+          <div class="doc-md-description">
+            <p>path to the YAML file contains multiple machines configs.</p>
+          </div>
+        </li>
+    </ul>
+
+          
 
 
 
@@ -2658,7 +2768,7 @@ Args:
   
       instance-attribute
    (thkit.jobman.helper.ConfigRemoteMachines.machines_file)" href="../api/#thkit.jobman.helper.ConfigRemoteMachines.machines_file">machines_file</a></code></b>
-              (<code><span title="str">str</span></code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
           –
           <div class="doc-md-description">
             
@@ -2704,6 +2814,7 @@ Args:
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -2724,6 +2835,7 @@ Args:
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -2744,6 +2856,7 @@ Args:
 
         <p>Validate multiple machines configs.</p>
 
+          
 
     </div>
 
@@ -2771,7 +2884,7 @@ Args:
     <ul>
         <li class="doc-section-item field-body">
             <b><code>mdict_prefix</code></b>
-              (<code><span title="str">str</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
                   <code>&#39;&#39;</code>
 )
           –
@@ -2785,7 +2898,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><span title="list">list</span>[<span title="dict">dict</span>]</code>
+              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>]</code>
           –
           <div class="doc-md-description">
             <p>list[dict]: list of machine dicts</p>
@@ -2793,6 +2906,7 @@ Args:
         </li>
     </ul>
 
+          
 
     </div>
 
@@ -2816,7 +2930,7 @@ Args:
     <ul>
         <li class="doc-section-item field-body">
             <b><code>mdict_prefix</code></b>
-              (<code><span title="str">str</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
                   <code>&#39;&#39;</code>
 )
           –
@@ -2826,6 +2940,7 @@ Args:
         </li>
     </ul>
 
+          
 
     </div>
 
@@ -2844,6 +2959,7 @@ Args:
 
         <p>Check whether the resource settings in all remote machines are valid.</p>
 
+          
 
     </div>
 
@@ -2871,7 +2987,7 @@ Args:
     <ul>
         <li class="doc-section-item field-body">
             <b><code>config_dict</code></b>
-              (<code><span title="dict">dict</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>, default:
                   <code>None</code>
 )
           –
@@ -2881,7 +2997,7 @@ Args:
         </li>
         <li class="doc-section-item field-body">
             <b><code>config_file</code></b>
-              (<code><span title="str">str</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
                   <code>None</code>
 )
           –
@@ -2891,7 +3007,7 @@ Args:
         </li>
         <li class="doc-section-item field-body">
             <b><code>schema_dict</code></b>
-              (<code><span title="dict">dict</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>, default:
                   <code>None</code>
 )
           –
@@ -2901,7 +3017,7 @@ Args:
         </li>
         <li class="doc-section-item field-body">
             <b><code>schema_file</code></b>
-              (<code><span title="str">str</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>, default:
                   <code>None</code>
 )
           –
@@ -2911,7 +3027,7 @@ Args:
         </li>
         <li class="doc-section-item field-body">
             <b><code>allow_unknown</code></b>
-              (<code><span title="bool">bool</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>, default:
                   <code>False</code>
 )
           –
@@ -2921,7 +3037,7 @@ Args:
         </li>
         <li class="doc-section-item field-body">
             <b><code>require_all</code></b>
-              (<code><span title="bool">bool</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>, default:
                   <code>False</code>
 )
           –
@@ -2935,7 +3051,7 @@ Args:
 <p><span class="doc-section-title">Raises:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><span title="ValueError">ValueError</span></code>
+              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/exceptions.html#ValueError">ValueError</a></code>
             –
           <div class="doc-md-description">
             <p>if the config file does not match the schema</p>
@@ -2943,6 +3059,7 @@ Args:
         </li>
     </ul>
 
+          
 
     </div>
 
@@ -2971,7 +3088,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>jdata</code></b> (              <code><span title="dict">dict</span></code>
+<b><code>jdata</code></b> (              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
 )          –
           <div class="doc-md-description">
             <p>(dict) The data loaded from the file</p>
@@ -2996,6 +3113,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 </span></code></pre></div></li>
 </ul>
 </details>
+          
 
     </div>
 
@@ -3023,6 +3141,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
         <p>Change the logfile of dpdispatcher.</p>
 
+          
 
     </div>
 
@@ -3039,8 +3158,9 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
-        <p>Initialize the default logger under <code>log/</code>, if not provided</p>
+        <p>Initialize the default logger under <code>log/</code> if not provided.</p>
 
+          
 
     </div>
 
@@ -3059,6 +3179,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
         <p>Log remote machine information.</p>
 
+          
 
     </div>
 
@@ -3084,6 +3205,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
+          
 
 
 
@@ -3101,7 +3223,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             <b><code><a class="autorefs autorefs-internal" title="            submit_job_chunk(mdict: dict, work_dir: str, task_list: list[Task], forward_common_files: list[str] = [], backward_common_files: list[str] = [], machine_index: int = 0, logger: ColorLogger | None = None) (thkit.jobman.submit.submit_job_chunk)" href="../api/#thkit.jobman.submit.submit_job_chunk">submit_job_chunk</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Function to submit a jobs to the remote machine. The function will:</p>
+              <p>Function to submit a jobs to the remote machine.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -3112,7 +3234,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
    (thkit.jobman.submit.async_submit_job_chunk)" href="../api/#thkit.jobman.submit.async_submit_job_chunk">async_submit_job_chunk</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+              <p>Convert <code>submit_job_chunk()</code> into an async function.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -3183,6 +3305,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -3203,6 +3326,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
+          
     </div>
 
 </div>
@@ -3221,27 +3345,34 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
-        <p>Function to submit a jobs to the remote machine. The function will:</p>
-<ul>
-<li>Prepare the task list</li>
-<li>Make the submission of jobs to remote machines</li>
-<li>Wait for the jobs to finish and download the results to the local machine</li>
-</ul>
+        <p>Function to submit a jobs to the remote machine.</p>
+<p>Includes:
+- Prepare the task list
+- Make the submission of jobs to remote machines
+- Wait for the jobs to finish and download the results to the local machine</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>mdict</code></b>
-              (<code><span title="dict">dict</span></code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>)
           –
           <div class="doc-md-description">
             <p>a dictionary contain settings of the remote machine. The parameters described in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>. This dictionary defines the login information, resources, execution command, etc. on the remote machine.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
+            <b><code>work_dir</code></b>
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+          –
+          <div class="doc-md-description">
+            <p>the base working directory on the local machine. All task directories are relative to this directory.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
             <b><code>task_list</code></b>
-              (<code><span title="list">list</span>[<span title="dpdispatcher.Task">Task</span>]</code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<span title="dpdispatcher.Task">Task</span>]</code>)
           –
           <div class="doc-md-description">
             <p>a list of <a href="https://docs.deepmodeling.com/projects/dpdispatcher/en/latest/task.html">Task</a> objects. Each task object contains the command to be executed on the remote machine, and the files to be copied to and from the remote machine. The dirs of each task must be relative to the <code>work_dir</code>.</p>
@@ -3249,7 +3380,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
         <li class="doc-section-item field-body">
             <b><code>forward_common_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>, default:
                   <code>[]</code>
 )
           –
@@ -3259,7 +3390,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
         <li class="doc-section-item field-body">
             <b><code>backward_common_files</code></b>
-              (<code><span title="list">list</span>[<span title="str">str</span>]</code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>, default:
                   <code>[]</code>
 )
           –
@@ -3269,7 +3400,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
         <li class="doc-section-item field-body">
             <b><code>machine_index</code></b>
-              (<code><span title="int">int</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>, default:
                   <code>0</code>
 )
           –
@@ -3279,7 +3410,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
         <li class="doc-section-item field-body">
             <b><code>logger</code></b>
-              (<code><span title="object">object</span></code>, default:
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#object">object</a></code>, default:
                   <code>None</code>
 )
           –
@@ -3297,6 +3428,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <li>Should not use the <code>Local</code> contexts, it will interference the current shell environment which leads to the unexpected behavior on local machine. Instead, use another account to connect local machine with <code>SSH</code> context.</li>
 </ul>
 </details>
+          
 
     </div>
 
@@ -3317,7 +3449,8 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
     <div class="doc doc-contents ">
 
-        <p>Convert <code>submit_job_chunk()</code> into an async function but only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
+        <p>Convert <code>submit_job_chunk()</code> into an async function.</p>
+<p>The approach in this function is only need to wait for the completion of the entire <code>for</code> loop (without worrying about the specifics of each operation inside the loop)</p>
 
 
 <details class="note" open>
@@ -3329,6 +3462,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <li><code>rich</code>'s remaining time does not work well with multiple progress bars. So, I implemented a customized time remaining column.</li>
 </ul>
 </details>
+          
 
     </div>
 
@@ -3356,7 +3490,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     <ul>
         <li class="doc-section-item field-body">
             <b><code>mdict_list</code></b>
-              (<code><span title="list">list</span>[<span title="dict">dict</span>]</code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>]</code>)
           –
           <div class="doc-md-description">
             <p>list of multiple <code>mdicts</code>. Each <code>mdict</code> contains parameters of one remote machine, which parameters as in the <a href="https://thangckt.github.io/thkit_doc/schema_doc/config_remote_machine/">remote machine schema</a>.</p>
@@ -3364,7 +3498,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
         <li class="doc-section-item field-body">
             <b><code>commandlist_list</code></b>
-              (<code><span title="list">list</span>[<span title="list">list</span>[<span title="str">str</span>]]</code>)
+              (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]]</code>)
           –
           <div class="doc-md-description">
             <p>list of command_lists, each list for each remote machine. Need to prepare outside.</p>
@@ -3372,6 +3506,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
         </li>
     </ul>
 
+          
 
     </div>
 

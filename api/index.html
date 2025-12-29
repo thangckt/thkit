@@ -2080,43 +2080,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Returns:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#thkit.path.list_paths--example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Note:
       
     </span>
   </a>
@@ -3723,43 +3690,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Returns:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#thkit.path.list_paths--example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.list_paths--note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Note:
       
     </span>
   </a>
@@ -7628,7 +7562,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: list[str] | str, patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: str | Iterable[str], patterns: Iterable[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
             –
             <div class="doc-md-description">
               <p>List all files/folders in given directories and their subdirectories that match the given patterns.</p>
@@ -7794,7 +7728,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.path.list_paths" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.list_paths" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -7802,33 +7736,74 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     <div class="doc doc-contents ">
 
         <p>List all files/folders in given directories and their subdirectories that match the given patterns.</p>
-<h6 id="thkit.path.list_paths--parameters">Parameters<a class="headerlink" href="#thkit.path.list_paths--parameters" title="Permanent link">&para;</a></h6>
-<p>paths : list[str]
-    The list of paths to search files/folders.
-patterns : list[str]
-    The list of patterns to apply to the files. Each filter can be a file extension or a pattern.</p>
-<h6 id="thkit.path.list_paths--returns">Returns:<a class="headerlink" href="#thkit.path.list_paths--returns" title="Permanent link">&para;</a></h6>
-<p>List[str]: A list of matching paths.</p>
-<h6 id="thkit.path.list_paths--example">Example:<a class="headerlink" href="#thkit.path.list_paths--example" title="Permanent link">&para;</a></h6>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>paths </code></b>
+          –
+          <div class="doc-md-description">
+            <p>str | Iterable[str]
+One or more root directories to search.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>patterns </code></b>
+          –
+          <div class="doc-md-description">
+            <p>Iterable[str]
+Glob patterns to match (e.g. "<em>.txt", "data</em>", "<em>/", "**/</em>.py").</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>recursive </code></b>
+          –
+          <div class="doc-md-description">
+            <p>bool, default=True
+If True, search recursively using rglob().
+If False, search only the top-level directory using glob().</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          –
+          <div class="doc-md-description">
+            <p>list[str]: Sorted list of matching paths (POSIX style).</p>
+          </div>
+        </li>
+    </ul>
+        <h6 id="thkit.path.list_paths--example">Example:<a class="headerlink" href="#thkit.path.list_paths--example" title="Permanent link">&para;</a></h6>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">folders</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;path1&quot;</span><span class="p">,</span> <span class="s2">&quot;path2&quot;</span><span class="p">,</span> <span class="s2">&quot;path3&quot;</span><span class="p">]</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;*.ext1&quot;</span><span class="p">,</span> <span class="s2">&quot;*.ext2&quot;</span><span class="p">,</span> <span class="s2">&quot;something*.ext3&quot;</span><span class="p">,</span> <span class="s2">&quot;*folder/&quot;</span><span class="p">]</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">files</span> <span class="o">=</span> <span class="n">list_files_in_dirs</span><span class="p">(</span><span class="n">folders</span><span class="p">,</span> <span class="n">patterns</span><span class="p">)</span>
 </span></code></pre></div>
-<h6 id="thkit.path.list_paths--note">Note:<a class="headerlink" href="#thkit.path.list_paths--note" title="Permanent link">&para;</a></h6>
-<ul>
-<li>glob() does not list hidden files by default. To include hidden files, use glob(".*", recursive=True).</li>
-<li>When use recursive=True, must include <code>**</code> in the pattern to search subdirectories.<ul>
-<li>glob("*", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT directory.</li>
-<li>glob("*/", recursive=True) will search all FOLDERS in the current CURRENT directory.</li>
-<li>glob("**", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT &amp; SUB subdirectories.</li>
-<li>glob("**/", recursive=True) will search all FOLDERS in the current CURRENT &amp; SUB subdirectories.</li>
-<li>"<strong>/*" is equivalent to "</strong>".</li>
-<li>"<strong>/*/" is equivalent to "</strong>/".</li>
-</ul>
-</li>
-<li>IMPORTANT: "<strong>/</strong>" will replicate the behavior of "**", then give unexpected results.</li>
-</ul>
+<p>Notes:
+- glob() does not list hidden files by default. To include hidden files, use glob(".<em>", recursive=True).
+- When use recursive=True, must include <code>**</code> in the pattern to search subdirectories.
+    - glob("</em>", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT directory.
+    - glob("<em>/", recursive=True) will search all FOLDERS in the current CURRENT directory.
+    - glob("<strong>", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT &amp; SUB subdirectories.
+    - glob("</strong>/", recursive=True) will search all FOLDERS in the current CURRENT &amp; SUB subdirectories.
+    - "**/</em>" is equivalent to "<strong>".
+    - "</strong>/<em>/" is equivalent to "*</em>/".
+- IMPORTANT: "<strong>/</strong>" will replicate the behavior of "**", then give unexpected results.</p>
 
+
+<details class="revised" open>
+  <summary>Revised</summary>
+  <ul>
+<li>Use <code>Path.rglob()</code> is better than <code>"**"</code> strings</li>
+<li>Hidden files are NOT matched unless explicitly included in a pattern (e.g. ".*").</li>
+<li>When <code>recursive=True</code>, patterns are interpreted relative to each root path. You usually do NOT need to manually add "**".</li>
+<li>Trailing "/" in patterns may be used to indicate directories.</li>
+</ul>
+</details>
           
 
     </div>

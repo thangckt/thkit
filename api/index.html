@@ -2104,34 +2104,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" collect_files">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.collect_files--parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.collect_files--returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Returns:
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -3713,34 +3685,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label=" collect_files">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.collect_files--parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thkit.path.collect_files--returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Returns:
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -7562,7 +7506,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: str | Iterable[str], patterns: Iterable[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list_paths(paths: str | list[str], patterns: list[str], recursive=True) -> list[str] (thkit.path.list_paths)" href="#thkit.path.list_paths">list_paths</a></code></b>
             –
             <div class="doc-md-description">
               <p>List all files/folders in given directories and their subdirectories that match the given patterns.</p>
@@ -7728,7 +7672,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 
 
 <h4 id="thkit.path.list_paths" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.path.list_paths" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -7744,7 +7688,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
             <b><code>paths </code></b>
           –
           <div class="doc-md-description">
-            <p>str | Iterable[str]
+            <p>str | list[str]
 One or more root directories to search.</p>
           </div>
         </li>
@@ -7752,7 +7696,7 @@ One or more root directories to search.</p>
             <b><code>patterns </code></b>
           –
           <div class="doc-md-description">
-            <p>Iterable[str]
+            <p>list[str]
 Glob patterns to match (e.g. "<em>.txt", "data</em>", "<em>/", "**/</em>.py").</p>
           </div>
         </li>
@@ -7821,14 +7765,33 @@ If False, search only the top-level directory using glob().</p>
 
     <div class="doc doc-contents ">
 
-        <p>Collect files from a list of paths (files/folders). Will search files in folders and their subdirectories.</p>
-<h6 id="thkit.path.collect_files--parameters">Parameters<a class="headerlink" href="#thkit.path.collect_files--parameters" title="Permanent link">&para;</a></h6>
-<p>paths : list[str]
-    The list of paths to collect files from.
-patterns : list[str]
-    The list of patterns to apply to the files. Each filter can be a file extension or a pattern.</p>
-<h6 id="thkit.path.collect_files--returns">Returns:<a class="headerlink" href="#thkit.path.collect_files--returns" title="Permanent link">&para;</a></h6>
-<p>List[str]: A list of paths matching files.</p>
+        <p>Collect files from a list of paths (files/folders). Will search files in folders and their subdirectories.
+- Files are added directly.
+- Directories are searched recursively using the given patterns.
+- Glob patterns in <code>paths</code> are expanded as-is.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>paths </code></b>
+          –
+          <div class="doc-md-description">
+            <p>list[str]
+The list of paths to collect files from.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>patterns </code></b>
+          –
+          <div class="doc-md-description">
+            <p>list[str]
+The list of patterns to apply to the files. Each filter can be a file extension or a pattern.</p>
+          </div>
+        </li>
+    </ul>
+        <p>Returns:
+list[str]: Sorted list of matching file paths (POSIX style).</p>
 
           
 

@@ -4512,8 +4512,8 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     </ul>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>The YAML file can contain variable-interpolation, will be processed by <a href="https://omegaconf.readthedocs.io/en/2.2_branch/usage.html#variable-interpolation">OmegaConf</a>. Example input YAML file:
     <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">server</span><span class="p">:</span>
@@ -5250,8 +5250,8 @@ print(d.to_dict()) # plain dict</p>
     </ul>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>Refer <a href="https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros">https://stackoverflow.com/questions/2440692/formatting-floats-without-trailing-zeros</a></li>
 </ul>
@@ -6143,8 +6143,8 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     </ul>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>The YAML file can contain variable-interpolation, will be processed by <a href="https://omegaconf.readthedocs.io/en/2.2_branch/usage.html#variable-interpolation">OmegaConf</a>. Example input YAML file:
     <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">server</span><span class="p">:</span>
@@ -7354,8 +7354,8 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 </span></code></pre></div></p>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>To input unicode characters, use the unicode escape sequence (e.g., "ǁ" for a specific character). See <a href="https://symbl.cc/en/unicode-table">unicode-table</a> for more details.<ul>
 <li>║ (Double vertical bar, <code>u2551</code>)</li>
@@ -7422,8 +7422,8 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     </ul>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>Refer <a href="https://github.com/Textualize/rich/blob/master/rich/color.py">rich</a>'s color scheme.</li>
 </ul>
@@ -7727,7 +7727,7 @@ If False, search only the top-level directory using glob().</p>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;*.ext1&quot;</span><span class="p">,</span> <span class="s2">&quot;*.ext2&quot;</span><span class="p">,</span> <span class="s2">&quot;something*.ext3&quot;</span><span class="p">,</span> <span class="s2">&quot;*folder/&quot;</span><span class="p">]</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">files</span> <span class="o">=</span> <span class="n">list_files_in_dirs</span><span class="p">(</span><span class="n">folders</span><span class="p">,</span> <span class="n">patterns</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Notes:
+<p>Note:
 - glob() does not list hidden files by default. To include hidden files, use glob(".<em>", recursive=True).
 - When use recursive=True, must include <code>**</code> in the pattern to search subdirectories.
     - glob("</em>", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT directory.
@@ -8207,8 +8207,8 @@ list[str]: Sorted list of matching file paths (POSIX style).</p>
     </ul>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li>Default using: <code>pip install -U {package_name}</code></li>
 <li>If <code>git_repo</code> is provided: <code>pip install -U git+{git_repo}</code></li>
@@ -8455,8 +8455,8 @@ list[str]: Sorted list of matching file paths (POSIX style).</p>
         <p>Generate composite spacing points from multiple ranges with tolerance-based uniqueness.</p>
 
 
-<details class="notes" open>
-  <summary>Notes</summary>
+<details class="note" open>
+  <summary>Note</summary>
   <ul>
 <li><code>np.round(np.array(all_points) / tol).astype(int)</code> is a trick to avoid floating point issues
   when comparing points with a certain tolerance.</li>

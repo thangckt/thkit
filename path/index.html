@@ -2074,7 +2074,7 @@ If False, search only the top-level directory using glob().</p>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;*.ext1&quot;</span><span class="p">,</span> <span class="s2">&quot;*.ext2&quot;</span><span class="p">,</span> <span class="s2">&quot;something*.ext3&quot;</span><span class="p">,</span> <span class="s2">&quot;*folder/&quot;</span><span class="p">]</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">files</span> <span class="o">=</span> <span class="n">list_files_in_dirs</span><span class="p">(</span><span class="n">folders</span><span class="p">,</span> <span class="n">patterns</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Notes:
+<p>Note:
 - glob() does not list hidden files by default. To include hidden files, use glob(".<em>", recursive=True).
 - When use recursive=True, must include <code>**</code> in the pattern to search subdirectories.
     - glob("</em>", recursive=True) will search all FILES &amp; FOLDERS in the CURRENT directory.

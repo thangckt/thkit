@@ -4266,14 +4266,15 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
     </ul>
 
 
-<details class="usage" open>
-  <summary>Usage</summary>
-  <p>d = DotDict({'a': 1, 'b': {'c': 2, 'd': [3, {'e': 4}]}})
-print(d.b.c)       # 2
-print(d['b']['c']) # 2
-d.b.d[1].e = 42
-print(d.b.d[1].e)  # 42
-print(d.to_dict()) # plain dict</p>
+<details class="example" open>
+  <summary>Example</summary>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d</span> <span class="o">=</span> <span class="n">DotDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;e&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}]}})</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">c</span><span class="p">)</span>  <span class="c1"># 2</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">][</span><span class="s2">&quot;c&quot;</span><span class="p">])</span>  <span class="c1"># 2</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">d</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">e</span> <span class="o">=</span> <span class="mi">42</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">e</span><span class="p">)</span>  <span class="c1"># 42</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>  <span class="c1"># plain dict</span>
+</span></code></pre></div>
 </details>
           
 

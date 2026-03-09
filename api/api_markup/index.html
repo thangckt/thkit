@@ -1054,7 +1054,7 @@
 
 
 <h2 id="thkit.markup" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.markup</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thkit.markup</code>
 
 
 <a href="#thkit.markup" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1076,21 +1076,21 @@
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            ThangBar (thkit.markup.ThangBar)" href="../api/#thkit.markup.ThangBar">ThangBar</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              ThangBar(*args, **kwargs) (thkit.markup.ThangBar)" href="../api/#thkit.markup.ThangBar">ThangBar</a></code></b>
           –
           <div class="doc-md-description">
             <p>A class to extend functions of the <a href="https://rich.readthedocs.io/en/latest/progress.html">rich's progress bar</a>.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            DynamicBarColumn (thkit.markup.DynamicBarColumn)" href="../api/#thkit.markup.DynamicBarColumn">DynamicBarColumn</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              DynamicBarColumn(**kwargs) (thkit.markup.DynamicBarColumn)" href="../api/#thkit.markup.DynamicBarColumn">DynamicBarColumn</a></code></b>
           –
           <div class="doc-md-description">
             <p>Extend <code>BarColumn</code> that can read per-task fields 'complete_color', 'finished_color',... to customize colors.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            TextDecor (thkit.markup.TextDecor)" href="../api/#thkit.markup.TextDecor">TextDecor</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              TextDecor(text: str = 'example') (thkit.markup.TextDecor)" href="../api/#thkit.markup.TextDecor">TextDecor</a></code></b>
           –
           <div class="doc-md-description">
             <p>A collection of text decoration utilities.</p>
@@ -1119,12 +1119,10 @@
 
 
 <h3 id="thkit.markup.ThangBar" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">ThangBar</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">ThangBar</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.markup.ThangBar" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ThangBar</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
@@ -1153,29 +1151,28 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            hide_bar (thkit.markup.ThangBar.hide_bar)" href="../api/#thkit.markup.ThangBar.hide_bar">hide_bar</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            hide_bar() (thkit.markup.ThangBar.hide_bar)" href="../api/#thkit.markup.ThangBar.hide_bar">hide_bar</a></code></b>
             –
             <div class="doc-md-description">
               <p>Hide all progress bars in the given Progress object.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            show_bar (thkit.markup.ThangBar.show_bar)" href="../api/#thkit.markup.ThangBar.show_bar">show_bar</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            show_bar() (thkit.markup.ThangBar.show_bar)" href="../api/#thkit.markup.ThangBar.show_bar">show_bar</a></code></b>
             –
             <div class="doc-md-description">
               <p>Show all progress bars in the given Progress object.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            align_etatext (thkit.markup.ThangBar.align_etatext)" href="../api/#thkit.markup.ThangBar.align_etatext">align_etatext</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            align_etatext(width: int) (thkit.markup.ThangBar.align_etatext)" href="../api/#thkit.markup.ThangBar.align_etatext">align_etatext</a></code></b>
             –
             <div class="doc-md-description">
               <p>Align the ETA text to the given width for all tasks.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            compute_eta
-
+            <b><code><a class="autorefs autorefs-internal" title="            compute_eta(num_iters: int, iter_index: int, old_time: float | None = None, new_time: float | None = None) -> str
 
   
       staticmethod
@@ -1207,12 +1204,10 @@
 
 
 <h4 id="thkit.markup.ThangBar.hide_bar" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">hide_bar</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">hide_bar</span><span class="p">()</span></code>
 
 <a href="#thkit.markup.ThangBar.hide_bar" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">hide_bar</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1228,12 +1223,10 @@
 
 
 <h4 id="thkit.markup.ThangBar.show_bar" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">show_bar</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">show_bar</span><span class="p">()</span></code>
 
 <a href="#thkit.markup.ThangBar.show_bar" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">show_bar</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1249,12 +1242,10 @@
 
 
 <h4 id="thkit.markup.ThangBar.align_etatext" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">align_etatext</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">align_etatext</span><span class="p">(</span><span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span></code>
 
 <a href="#thkit.markup.ThangBar.align_etatext" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">align_etatext</span><span class="p">(</span><span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1270,16 +1261,14 @@
 
 
 <h4 id="thkit.markup.ThangBar.compute_eta" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">compute_eta</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_eta</span><span class="p">(</span><span class="n">num_iters</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">iter_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">old_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">new_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
   </span>
 
 <a href="#thkit.markup.ThangBar.compute_eta" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compute_eta</span><span class="p">(</span><span class="n">num_iters</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">iter_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">old_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">new_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1304,12 +1293,10 @@
 
 
 <h3 id="thkit.markup.DynamicBarColumn" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">DynamicBarColumn</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">DynamicBarColumn</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thkit.markup.DynamicBarColumn" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">DynamicBarColumn</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
@@ -1370,7 +1357,7 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            render (thkit.markup.DynamicBarColumn.render)" href="../api/#thkit.markup.DynamicBarColumn.render">render</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            render(task) -> ProgressBar (thkit.markup.DynamicBarColumn.render)" href="../api/#thkit.markup.DynamicBarColumn.render">render</a></code></b>
             –
             <div class="doc-md-description">
               <p>Gets a progress bar widget for a task.</p>
@@ -1398,12 +1385,10 @@
 
 
 <h4 id="thkit.markup.DynamicBarColumn.render" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">render</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">render</span><span class="p">(</span><span class="n">task</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ProgressBar</span></code>
 
 <a href="#thkit.markup.DynamicBarColumn.render" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">render</span><span class="p">(</span><span class="n">task</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ProgressBar</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1428,12 +1413,10 @@
 
 
 <h3 id="thkit.markup.TextDecor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">TextDecor</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">TextDecor</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;example&#39;</span><span class="p">)</span></code>
 
 <a href="#thkit.markup.TextDecor" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">TextDecor</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;example&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1456,35 +1439,35 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fill_center (thkit.markup.TextDecor.fill_center)" href="../api/#thkit.markup.TextDecor.fill_center">fill_center</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fill_center(fill: str = '-', length: int = 60) -> str (thkit.markup.TextDecor.fill_center)" href="../api/#thkit.markup.TextDecor.fill_center">fill_center</a></code></b>
             –
             <div class="doc-md-description">
               <p>Return the text centered within a line of the given length, filled with <code>fill</code>.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fill_left (thkit.markup.TextDecor.fill_left)" href="../api/#thkit.markup.TextDecor.fill_left">fill_left</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fill_left(margin: int = 15, fill_left: str = '-', fill_right: str = ' ', length: int = 60) -> str (thkit.markup.TextDecor.fill_left)" href="../api/#thkit.markup.TextDecor.fill_left">fill_left</a></code></b>
             –
             <div class="doc-md-description">
               <p>Return the text left-aligned within a line of the given length, with left and right fills.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fill_box (thkit.markup.TextDecor.fill_box)" href="../api/#thkit.markup.TextDecor.fill_box">fill_box</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fill_box(fill: str = ' ', sp: str = 'ǁ', length: int = 60) -> str (thkit.markup.TextDecor.fill_box)" href="../api/#thkit.markup.TextDecor.fill_box">fill_box</a></code></b>
             –
             <div class="doc-md-description">
               <p>Return a string centered in a box with side delimiters.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            repeat (thkit.markup.TextDecor.repeat)" href="../api/#thkit.markup.TextDecor.repeat">repeat</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            repeat(length: int) -> str (thkit.markup.TextDecor.repeat)" href="../api/#thkit.markup.TextDecor.repeat">repeat</a></code></b>
             –
             <div class="doc-md-description">
               <p>Repeat the input string to a specified length.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            mkcolor (thkit.markup.TextDecor.mkcolor)" href="../api/#thkit.markup.TextDecor.mkcolor">mkcolor</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            mkcolor(color: str = 'blue') -> str (thkit.markup.TextDecor.mkcolor)" href="../api/#thkit.markup.TextDecor.mkcolor">mkcolor</a></code></b>
             –
             <div class="doc-md-description">
               <p>Return ANSI-colored text that works in terminal or Jupyter.</p>
@@ -1498,8 +1481,7 @@
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            text
-
+          <b><code><a class="autorefs autorefs-internal" title="            text = text
 
   
       instance-attribute
@@ -1527,16 +1509,14 @@
 
 
 <h4 id="thkit.markup.TextDecor.text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">text</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">text</span> <span class="o">=</span> <span class="n">text</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thkit.markup.TextDecor.text" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1552,12 +1532,10 @@
 
 
 <h4 id="thkit.markup.TextDecor.fill_center" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fill_center</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fill_center</span><span class="p">(</span><span class="n">fill</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.markup.TextDecor.fill_center" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fill_center</span><span class="p">(</span><span class="n">fill</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1573,12 +1551,10 @@
 
 
 <h4 id="thkit.markup.TextDecor.fill_left" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fill_left</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fill_left</span><span class="p">(</span><span class="n">margin</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">fill_left</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">fill_right</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.markup.TextDecor.fill_left" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fill_left</span><span class="p">(</span><span class="n">margin</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">fill_left</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">fill_right</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1594,12 +1570,10 @@
 
 
 <h4 id="thkit.markup.TextDecor.fill_box" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fill_box</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fill_box</span><span class="p">(</span><span class="n">fill</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">sp</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;ǁ&#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.markup.TextDecor.fill_box" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fill_box</span><span class="p">(</span><span class="n">fill</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">sp</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;ǁ&#39;</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1631,12 +1605,10 @@
 
 
 <h4 id="thkit.markup.TextDecor.repeat" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">repeat</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">repeat</span><span class="p">(</span><span class="n">length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.markup.TextDecor.repeat" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">repeat</span><span class="p">(</span><span class="n">length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1652,12 +1624,10 @@
 
 
 <h4 id="thkit.markup.TextDecor.mkcolor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">mkcolor</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">mkcolor</span><span class="p">(</span><span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.markup.TextDecor.mkcolor" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">mkcolor</span><span class="p">(</span><span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

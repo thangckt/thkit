@@ -1067,7 +1067,7 @@
 
 
 <h2 id="thkit.io" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.io</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thkit.io</code>
 
 
 <a href="#thkit.io" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1089,7 +1089,7 @@
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            DotDict (thkit.io.DotDict)" href="../api/#thkit.io.DotDict">DotDict</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              DotDict(dct=None) (thkit.io.DotDict)" href="../api/#thkit.io.DotDict">DotDict</a></code></b>
           –
           <div class="doc-md-description">
             <p>Dictionary supporting dot notation (attribute access) as well as standard dictionary access.</p>
@@ -1103,70 +1103,70 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_yaml (thkit.io.read_yaml)" href="../api/#thkit.io.read_yaml">read_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_yaml(filename: str | Path) -> Any (thkit.io.read_yaml)" href="../api/#thkit.io.read_yaml">read_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read data from a YAML file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_yaml (thkit.io.write_yaml)" href="../api/#thkit.io.write_yaml">write_yaml</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_yaml(jdata: dict[Any, Any] | list[Any], filename: str | Path) (thkit.io.write_yaml)" href="../api/#thkit.io.write_yaml">write_yaml</a></code></b>
             –
             <div class="doc-md-description">
               <p>Write data to a YAML file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            combine_text_files (thkit.io.combine_text_files)" href="../api/#thkit.io.combine_text_files">combine_text_files</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            combine_text_files(files: list[str], output_file: str, chunk_size: int = 1024) (thkit.io.combine_text_files)" href="../api/#thkit.io.combine_text_files">combine_text_files</a></code></b>
             –
             <div class="doc-md-description">
               <p>Combine text files into a single file in a memory-efficient.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            unpack_dict (thkit.io.unpack_dict)" href="../api/#thkit.io.unpack_dict">unpack_dict</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            unpack_dict(nested_dict: dict) -> dict (thkit.io.unpack_dict)" href="../api/#thkit.io.unpack_dict">unpack_dict</a></code></b>
             –
             <div class="doc-md-description">
               <p>Unpack one level of nested dictionary.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            download_rawtext (thkit.io.download_rawtext)" href="../api/#thkit.io.download_rawtext">download_rawtext</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            download_rawtext(url: str, outfile: str | None = None) -> str (thkit.io.download_rawtext)" href="../api/#thkit.io.download_rawtext">download_rawtext</a></code></b>
             –
             <div class="doc-md-description">
               <p>Download raw text from a URL.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            txt2str (thkit.io.txt2str)" href="../api/#thkit.io.txt2str">txt2str</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            txt2str(file_path: str | Path) -> str (thkit.io.txt2str)" href="../api/#thkit.io.txt2str">txt2str</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a text file to a string.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            str2txt (thkit.io.str2txt)" href="../api/#thkit.io.str2txt">str2txt</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            str2txt(text: str, file_path: str | Path) -> None (thkit.io.str2txt)" href="../api/#thkit.io.str2txt">str2txt</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a string to a text file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            txt2list (thkit.io.txt2list)" href="../api/#thkit.io.txt2list">txt2list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            txt2list(file_path: str | Path) -> list[str] (thkit.io.txt2list)" href="../api/#thkit.io.txt2list">txt2list</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a text file to a list of lines (without newline characters).</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list2txt (thkit.io.list2txt)" href="../api/#thkit.io.list2txt">list2txt</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list2txt(lines: list[str], file_path: str | Path) -> None (thkit.io.list2txt)" href="../api/#thkit.io.list2txt">list2txt</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a list of lines to a text file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            float2str (thkit.io.float2str)" href="../api/#thkit.io.float2str">float2str</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            float2str(number: float, decimals=6) (thkit.io.float2str)" href="../api/#thkit.io.float2str">float2str</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert float number to str.</p>
@@ -1193,12 +1193,10 @@
 
 
 <h3 id="thkit.io.DotDict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">DotDict</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">DotDict</span><span class="p">(</span><span class="n">dct</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thkit.io.DotDict" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">DotDict</span><span class="p">(</span><span class="n">dct</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
@@ -1250,21 +1248,21 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            __setitem__ (thkit.io.DotDict.__setitem__)" href="../api/#thkit.io.DotDict.__setitem__">__setitem__</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            __setitem__(key, value) (thkit.io.DotDict.__setitem__)" href="../api/#thkit.io.DotDict.__setitem__">__setitem__</a></code></b>
             –
             <div class="doc-md-description">
               <p>Set item using dot notation or standard dict syntax.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            __setattr__ (thkit.io.DotDict.__setattr__)" href="../api/#thkit.io.DotDict.__setattr__">__setattr__</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            __setattr__(key, value) (thkit.io.DotDict.__setattr__)" href="../api/#thkit.io.DotDict.__setattr__">__setattr__</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            to_dict (thkit.io.DotDict.to_dict)" href="../api/#thkit.io.DotDict.to_dict">to_dict</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            to_dict() (thkit.io.DotDict.to_dict)" href="../api/#thkit.io.DotDict.to_dict">to_dict</a></code></b>
             –
             <div class="doc-md-description">
               <p>Recursively convert DotDict back to plain dict.</p>
@@ -1278,8 +1276,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __getattr__
-
+          <b><code><a class="autorefs autorefs-internal" title="            __getattr__ = dict.__getitem__
 
   
       class-attribute
@@ -1291,8 +1288,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            __delattr__
-
+          <b><code><a class="autorefs autorefs-internal" title="            __delattr__ = dict.__delitem__
 
   
       class-attribute
@@ -1321,8 +1317,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h4 id="thkit.io.DotDict.__getattr__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">__getattr__</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="fm">__getattr__</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="fm">__getitem__</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -1330,8 +1325,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
   </span>
 
 <a href="#thkit.io.DotDict.__getattr__" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="fm">__getattr__</span> <span class="o">=</span> <span class="fm">__getitem__</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1345,8 +1339,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h4 id="thkit.io.DotDict.__delattr__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">__delattr__</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="fm">__delattr__</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="fm">__delitem__</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -1354,8 +1347,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
   </span>
 
 <a href="#thkit.io.DotDict.__delattr__" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="fm">__delattr__</span> <span class="o">=</span> <span class="fm">__delitem__</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1371,12 +1363,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h4 id="thkit.io.DotDict.__setitem__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">__setitem__</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__setitem__</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
 
 <a href="#thkit.io.DotDict.__setitem__" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">__setitem__</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1392,12 +1382,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h4 id="thkit.io.DotDict.__setattr__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">__setattr__</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__setattr__</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
 
 <a href="#thkit.io.DotDict.__setattr__" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">__setattr__</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1411,12 +1399,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h4 id="thkit.io.DotDict.to_dict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">to_dict</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">to_dict</span><span class="p">()</span></code>
 
 <a href="#thkit.io.DotDict.to_dict" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_dict</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1441,12 +1427,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.read_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_yaml</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span></code>
 
 <a href="#thkit.io.read_yaml" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_yaml</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1462,12 +1446,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.write_yaml" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">write_yaml</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span></code>
 
 <a href="#thkit.io.write_yaml" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">write_yaml</span><span class="p">(</span><span class="n">jdata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1483,12 +1465,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.combine_text_files" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">combine_text_files</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">combine_text_files</span><span class="p">(</span><span class="n">files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">output_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">)</span></code>
 
 <a href="#thkit.io.combine_text_files" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">combine_text_files</span><span class="p">(</span><span class="n">files</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">output_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1536,12 +1516,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.unpack_dict" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">unpack_dict</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">unpack_dict</span><span class="p">(</span><span class="n">nested_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thkit.io.unpack_dict" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">unpack_dict</span><span class="p">(</span><span class="n">nested_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1557,12 +1535,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.download_rawtext" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">download_rawtext</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">download_rawtext</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.io.download_rawtext" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">download_rawtext</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1578,12 +1554,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.txt2str" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">txt2str</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">txt2str</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
 
 <a href="#thkit.io.txt2str" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">txt2str</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1599,12 +1573,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.str2txt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">str2txt</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">str2txt</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thkit.io.str2txt" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">str2txt</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1620,12 +1592,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.txt2list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">txt2list</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">txt2list</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 <a href="#thkit.io.txt2list" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">txt2list</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1641,12 +1611,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.list2txt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">list2txt</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list2txt</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thkit.io.list2txt" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">list2txt</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1662,12 +1630,10 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h3 id="thkit.io.float2str" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">float2str</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">float2str</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span></code>
 
 <a href="#thkit.io.float2str" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">float2str</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

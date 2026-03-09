@@ -937,7 +937,7 @@
 
 
 <h2 id="thkit.range" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.range</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thkit.range</code>
 
 
 <a href="#thkit.range" class="headerlink" title="Permanent link">¤</a></h2>
@@ -959,35 +959,35 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            range_inclusive (thkit.range.range_inclusive)" href="../api/#thkit.range.range_inclusive">range_inclusive</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            range_inclusive(start: float, end: float, step: float, tol: float = 1e-06) -> list[float] (thkit.range.range_inclusive)" href="../api/#thkit.range.range_inclusive">range_inclusive</a></code></b>
             –
             <div class="doc-md-description">
               <p>Generate evenly spaced points including the endpoint (within tolerance).</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            composite_range (thkit.range.composite_range)" href="../api/#thkit.range.composite_range">composite_range</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            composite_range(list_inputs: list[float | str], tol=1e-06) -> list[float] (thkit.range.composite_range)" href="../api/#thkit.range.composite_range">composite_range</a></code></b>
             –
             <div class="doc-md-description">
               <p>A custom parser to allow define composite ranges. This is needed for defining input parameters in YAML files.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            composite_index (thkit.range.composite_index)" href="../api/#thkit.range.composite_index">composite_index</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            composite_index(list_inputs: list[float | str]) -> list[int] (thkit.range.composite_index)" href="../api/#thkit.range.composite_index">composite_index</a></code></b>
             –
             <div class="doc-md-description">
               <p>Allow define composite index ranges.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            composite_strain_points (thkit.range.composite_strain_points)" href="../api/#thkit.range.composite_strain_points">composite_strain_points</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            composite_strain_points(list_inputs: list[int | float | str], tol=1e-06) -> list[float] (thkit.range.composite_strain_points)" href="../api/#thkit.range.composite_strain_points">composite_strain_points</a></code></b>
             –
             <div class="doc-md-description">
               <p>Generate composite spacing points from multiple ranges with tolerance-based uniqueness.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            chunk_list (thkit.range.chunk_list)" href="../api/#thkit.range.chunk_list">chunk_list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            chunk_list(input_list: list, chunk_size: int) -> Generator (thkit.range.chunk_list)" href="../api/#thkit.range.chunk_list">chunk_list</a></code></b>
             –
             <div class="doc-md-description">
               <p>Yield successive n-sized chunks from <code>input_list</code>.</p>
@@ -1014,12 +1014,10 @@
 
 
 <h3 id="thkit.range.range_inclusive" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">range_inclusive</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">range_inclusive</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">tol</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
 
 <a href="#thkit.range.range_inclusive" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">range_inclusive</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">tol</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1035,12 +1033,10 @@
 
 
 <h3 id="thkit.range.composite_range" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_range</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_range</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
 
 <a href="#thkit.range.composite_range" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_range</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1080,12 +1076,10 @@
 
 
 <h3 id="thkit.range.composite_index" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_index</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_index</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
 
 <a href="#thkit.range.composite_index" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_index</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1115,12 +1109,10 @@
 
 
 <h3 id="thkit.range.composite_strain_points" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_strain_points</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">composite_strain_points</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
 
 <a href="#thkit.range.composite_strain_points" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_strain_points</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1144,12 +1136,10 @@
 
 
 <h3 id="thkit.range.chunk_list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">chunk_list</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">chunk_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span></code>
 
 <a href="#thkit.range.chunk_list" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">chunk_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

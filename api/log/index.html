@@ -834,8 +834,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -844,6 +842,18 @@
     <ul class="md-nav__list" data-md-component="toc">
       
         <li class="md-nav__item">
+  <a href="#thkit.log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;log
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#thkit.log.ColorLogger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -892,8 +902,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.log.create_logger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -903,8 +913,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.log.write_to_logfile" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -912,6 +922,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -932,15 +947,17 @@
 
 
 
+  <h1>Log</h1>
+
 <div class="doc doc-object doc-module">
 
 
 
-<h1 id="thkit.log" class="doc doc-heading">
+<h2 id="thkit.log" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.log</span>
 
 
-<a href="#thkit.log" class="headerlink" title="Permanent link">¤</a></h1>
+<a href="#thkit.log" class="headerlink" title="Permanent link">¤</a></h2>
 
     <div class="doc doc-contents first">
 
@@ -1004,11 +1021,11 @@
 
 
 
-<h2 id="thkit.log.ColorLogger" class="doc doc-heading">
+<h3 id="thkit.log.ColorLogger" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">ColorLogger</span>
 
 
-<a href="#thkit.log.ColorLogger" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.log.ColorLogger" class="headerlink" title="Permanent link">¤</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -1075,11 +1092,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.log.ColorLogger.info" class="doc doc-heading">
+<h4 id="thkit.log.ColorLogger.info" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">info</span>
 
 
-<a href="#thkit.log.ColorLogger.info" class="headerlink" title="Permanent link">¤</a></h3>
+<a href="#thkit.log.ColorLogger.info" class="headerlink" title="Permanent link">¤</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </span></code></pre></div>
 
@@ -1094,11 +1111,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.log.ColorLogger.warning" class="doc doc-heading">
+<h4 id="thkit.log.ColorLogger.warning" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">warning</span>
 
 
-<a href="#thkit.log.ColorLogger.warning" class="headerlink" title="Permanent link">¤</a></h3>
+<a href="#thkit.log.ColorLogger.warning" class="headerlink" title="Permanent link">¤</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </span></code></pre></div>
 
@@ -1113,11 +1130,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.log.ColorLogger.error" class="doc doc-heading">
+<h4 id="thkit.log.ColorLogger.error" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">error</span>
 
 
-<a href="#thkit.log.ColorLogger.error" class="headerlink" title="Permanent link">¤</a></h3>
+<a href="#thkit.log.ColorLogger.error" class="headerlink" title="Permanent link">¤</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </span></code></pre></div>
 
@@ -1141,11 +1158,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.log.create_logger" class="doc doc-heading">
+<h3 id="thkit.log.create_logger" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">create_logger</span>
 
 
-<a href="#thkit.log.create_logger" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.log.create_logger" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">create_logger</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span><span class="p">,</span> <span class="n">level_logfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ColorLogger</span>
 </span></code></pre></div>
 
@@ -1162,11 +1179,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.log.write_to_logfile" class="doc doc-heading">
+<h3 id="thkit.log.write_to_logfile" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">write_to_logfile</span>
 
 
-<a href="#thkit.log.write_to_logfile" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.log.write_to_logfile" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">write_to_logfile</span><span class="p">(</span><span class="n">logger</span><span class="p">:</span> <span class="n">Logger</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
 </span></code></pre></div>
 

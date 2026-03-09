@@ -834,8 +834,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -844,6 +842,18 @@
     <ul class="md-nav__list" data-md-component="toc">
       
         <li class="md-nav__item">
+  <a href="#thkit.range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;range
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#thkit.range.range_inclusive" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -853,8 +863,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.range.composite_range" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -864,8 +874,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.range.composite_index" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -875,8 +885,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.range.composite_strain_points" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -886,8 +896,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#thkit.range.chunk_list" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -895,6 +905,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -915,15 +930,17 @@
 
 
 
+  <h1>Api range</h1>
+
 <div class="doc doc-object doc-module">
 
 
 
-<h1 id="thkit.range" class="doc doc-heading">
+<h2 id="thkit.range" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.range</span>
 
 
-<a href="#thkit.range" class="headerlink" title="Permanent link">¤</a></h1>
+<a href="#thkit.range" class="headerlink" title="Permanent link">¤</a></h2>
 
     <div class="doc doc-contents first">
 
@@ -996,11 +1013,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.range.range_inclusive" class="doc doc-heading">
+<h3 id="thkit.range.range_inclusive" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">range_inclusive</span>
 
 
-<a href="#thkit.range.range_inclusive" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.range.range_inclusive" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">range_inclusive</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">tol</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </span></code></pre></div>
 
@@ -1017,11 +1034,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.range.composite_range" class="doc doc-heading">
+<h3 id="thkit.range.composite_range" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_range</span>
 
 
-<a href="#thkit.range.composite_range" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.range.composite_range" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_range</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </span></code></pre></div>
 
@@ -1062,11 +1079,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.range.composite_index" class="doc doc-heading">
+<h3 id="thkit.range.composite_index" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_index</span>
 
 
-<a href="#thkit.range.composite_index" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.range.composite_index" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_index</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
 </span></code></pre></div>
 
@@ -1097,11 +1114,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.range.composite_strain_points" class="doc doc-heading">
+<h3 id="thkit.range.composite_strain_points" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">composite_strain_points</span>
 
 
-<a href="#thkit.range.composite_strain_points" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.range.composite_strain_points" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">composite_strain_points</span><span class="p">(</span><span class="n">list_inputs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">str</span><span class="p">],</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </span></code></pre></div>
 
@@ -1126,11 +1143,11 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="thkit.range.chunk_list" class="doc doc-heading">
+<h3 id="thkit.range.chunk_list" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">chunk_list</span>
 
 
-<a href="#thkit.range.chunk_list" class="headerlink" title="Permanent link">¤</a></h2>
+<a href="#thkit.range.chunk_list" class="headerlink" title="Permanent link">¤</a></h3>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">chunk_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span>
 </span></code></pre></div>
 

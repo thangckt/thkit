@@ -960,10 +960,10 @@
 
 
 
-<h1 id="jobman-documentation">Jobman documentation<a class="headerlink" href="#jobman-documentation" title="Permanent link">&para;</a></h1>
+<h1 id="jobman-documentation">Jobman documentation<a class="headerlink" href="#jobman-documentation" title="Permanent link">¤</a></h1>
 <p><code>jobman</code> is a job management package designed to submit and monitor jobs on remote machines. It is built on the top of the <a href="https://docs.deepmodeling.com/projects/dpdispatcher">dpdispatcher</a> package.</p>
 <p><code>jobman</code> is designed for the big data era, where the number of remoted jobs is large that handling them manually is almost impossible. Imaging that you have more than 1000 jobs to run, you have access to 3 remote high-performance computing (HPC) serves with different computing environment, and you need to monitor the progress of each job, check the output files, and download the results. This is a tedious and time-consuming task. The <code>jobman</code> package is designed to automate such tasks. <code>jobman</code> will handle the input files, submit the jobs to remote machines, monitor the progress of each job, and download the results to the local machine whenever jobs finished.</p>
-<h2 id="case-1-distribute-jobs-to-a-single-remote-machine">Case 1: Distribute jobs to a single remote machine<a class="headerlink" href="#case-1-distribute-jobs-to-a-single-remote-machine" title="Permanent link">&para;</a></h2>
+<h2 id="case-1-distribute-jobs-to-a-single-remote-machine">Case 1: Distribute jobs to a single remote machine<a class="headerlink" href="#case-1-distribute-jobs-to-a-single-remote-machine" title="Permanent link">¤</a></h2>
 <p>This is a general purpose usage, where <code>task_list</code> can be defined flexibly. In this case, each <code>Task</code> can have different <code>command_list</code>, <code>forward_files</code>, <code>backward_files</code>.</p>
 <p>To use, just need to:</p>
 <ul>
@@ -1018,7 +1018,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>python<span class="w"> </span>above_py_script.py
 </span></code></pre></div>
-<h2 id="case-2-distribute-jobs-to-multiple-remote-machines">Case 2: Distribute jobs to multiple remote machines<a class="headerlink" href="#case-2-distribute-jobs-to-multiple-remote-machines" title="Permanent link">&para;</a></h2>
+<h2 id="case-2-distribute-jobs-to-multiple-remote-machines">Case 2: Distribute jobs to multiple remote machines<a class="headerlink" href="#case-2-distribute-jobs-to-multiple-remote-machines" title="Permanent link">¤</a></h2>
 <p>This is used for specific purpose (e.g., <code>alff</code> package), where the jobs have the same forward_files, backward_files; but the command_list can be different based on computing environment on each remote machine. Just need to:</p>
 <ul>
 <li>Prepare the <code>task_dirs</code>, where all of them have the same forward_files, backward_files.</li>

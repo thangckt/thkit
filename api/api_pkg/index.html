@@ -834,6 +834,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -842,18 +844,6 @@
     <ul class="md-nav__list" data-md-component="toc">
       
         <li class="md-nav__item">
-  <a href="#thkit.pkg" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;pkg
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" pkg">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#thkit.pkg.check_package" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -863,8 +853,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#thkit.pkg.install_package" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -874,8 +864,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#thkit.pkg.dependency_info" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -883,11 +873,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -908,17 +893,15 @@
 
 
 
-  <h1>Api pkg</h1>
-
 <div class="doc doc-object doc-module">
 
 
 
-<h2 id="thkit.pkg" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thkit.pkg</code>
+<h1 id="thkit.pkg" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thkit.pkg</span>
 
 
-<a href="#thkit.pkg" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#thkit.pkg" class="headerlink" title="Permanent link">¤</a></h1>
 
     <div class="doc doc-contents first">
 
@@ -937,21 +920,21 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_package(package_name: str, auto_install: bool = False, git_repo: str | None = None, conda_channel: str | None = None) (thkit.pkg.check_package)" href="../api/#thkit.pkg.check_package">check_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_package (thkit.pkg.check_package)" href="../api/#thkit.pkg.check_package">check_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check if the required packages are installed.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            install_package(package_name: str, git_repo: str | None = None, conda_channel: str | None = None) -> None (thkit.pkg.install_package)" href="../api/#thkit.pkg.install_package">install_package</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            install_package (thkit.pkg.install_package)" href="../api/#thkit.pkg.install_package">install_package</a></code></b>
             –
             <div class="doc-md-description">
               <p>Install the required package.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            dependency_info(packages=['numpy', 'polars', 'thkit', 'ase']) -> str (thkit.pkg.dependency_info)" href="../api/#thkit.pkg.dependency_info">dependency_info</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            dependency_info (thkit.pkg.dependency_info)" href="../api/#thkit.pkg.dependency_info">dependency_info</a></code></b>
             –
             <div class="doc-md-description">
               <p>Get the dependency information.</p>
@@ -977,11 +960,13 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.pkg.check_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
+<h2 id="thkit.pkg.check_package" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">check_package</span>
 
-<a href="#thkit.pkg.check_package" class="headerlink" title="Permanent link">&para;</a></h3>
 
+<a href="#thkit.pkg.check_package" class="headerlink" title="Permanent link">¤</a></h2>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">check_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">auto_install</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+</span></code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -996,11 +981,13 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.pkg.install_package" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
+<h2 id="thkit.pkg.install_package" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">install_package</span>
 
-<a href="#thkit.pkg.install_package" class="headerlink" title="Permanent link">&para;</a></h3>
 
+<a href="#thkit.pkg.install_package" class="headerlink" title="Permanent link">¤</a></h2>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">install_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">git_repo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">conda_channel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</span></code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -1057,11 +1044,13 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="thkit.pkg.dependency_info" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">dependency_info</span><span class="p">(</span><span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;numpy&#39;</span><span class="p">,</span> <span class="s1">&#39;polars&#39;</span><span class="p">,</span> <span class="s1">&#39;thkit&#39;</span><span class="p">,</span> <span class="s1">&#39;ase&#39;</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+<h2 id="thkit.pkg.dependency_info" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">dependency_info</span>
 
-<a href="#thkit.pkg.dependency_info" class="headerlink" title="Permanent link">&para;</a></h3>
 
+<a href="#thkit.pkg.dependency_info" class="headerlink" title="Permanent link">¤</a></h2>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">dependency_info</span><span class="p">(</span><span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;numpy&#39;</span><span class="p">,</span> <span class="s1">&#39;polars&#39;</span><span class="p">,</span> <span class="s1">&#39;thkit&#39;</span><span class="p">,</span> <span class="s1">&#39;ase&#39;</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+</span></code></pre></div>
 
     <div class="doc doc-contents ">
 

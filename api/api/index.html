@@ -4538,6 +4538,7 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
 <li>If the 'event loop is blocked' by a asynchronous function (it will not yield control to event loop), the async function will wait for the completion of the synchronous function. So, the async function will not be executed asynchronously. Try to use <code>await asyncio.to_thread()</code> to run the synchronous function in a separate thread, so that the event loop is not blocked.</li>
 <li>This version use <code>rich</code> instead of <code>tqdm</code> for better handle progess bars (see retired codes). Multiple <code>tqdm</code> bars work well if there are not errors during job submission. However, if the jobs raise errors, the <code>tqdm</code> bars will be messed up.</li>
 <li><code>rich</code>'s remaining time does not work well with multiple progress bars. So, I implemented a customized time remaining column.</li>
+<li>Consider to force delete heavy variables and use <code>gc.collect()</code> to free up memory.</li>
 </ul>
 </details>
           

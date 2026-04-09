@@ -1056,6 +1056,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#thkit.log.silence_odd_loggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;silence_odd_loggers
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1945,6 +1956,17 @@
     <span class="md-ellipsis">
       
         <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;write_to_logfile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thkit.log.silence_odd_loggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;silence_odd_loggers
       
     </span>
   </a>
@@ -4656,6 +4678,13 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
               <p>Retrieve logfile name from logger and write text to it. Useful when want to write unformat text to the same logfile used by logger.</p>
             </div>
           </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="            silence_odd_loggers(ignore_list=None) (thkit.log.silence_odd_loggers)" href="#thkit.log.silence_odd_loggers">silence_odd_loggers</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Silence all loggers except those in the ignore_list.</p>
+            </div>
+          </li>
     </ul>
 
 
@@ -4835,6 +4864,42 @@ filename (Union[str, Path]): The filename to load data from, whose suffix should
     <div class="doc doc-contents ">
 
         <p>Retrieve logfile name from logger and write text to it. Useful when want to write unformat text to the same logfile used by logger.</p>
+
+          
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="thkit.log.silence_odd_loggers" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">silence_odd_loggers</span><span class="p">(</span><span class="n">ignore_list</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#thkit.log.silence_odd_loggers" class="headerlink" title="Permanent link">¤</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Silence all loggers except those in the ignore_list.
+Sets all active loggers to WARNING level except for those provided in the ignore_list.
+This is useful to suppress verbose logging from third-party libraries while keeping your own loggers unaffected.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>ignore_list</code></b>
+              (<code>list of str</code>, default:
+                  <code>None</code>
+)
+          –
+          <div class="doc-md-description">
+            <p>List of logger names to keep unaffected.</p>
+          </div>
+        </li>
+    </ul>
 
           
 

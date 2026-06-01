@@ -25,7 +25,7 @@
         
         
         
-          <link rel="icon" href="../_assets/image/logo_clip.svg">
+          <link rel="icon" href="../_assets/image/logo_clff.svg">
         
       
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
@@ -120,7 +120,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="thkit" class="md-header__button md-logo" aria-label="thkit" data-md-component="logo">
       
-  <img src="../_assets/image/logo_clip.svg" alt="logo">
+  <img src="../_assets/image/logo_clff.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -174,13 +174,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="http://thangckt.github.io/clip" class="md-tabs__link">
+      <a href="http://thangckt.github.io/clff" class="md-tabs__link">
         
   
   
     
   
-  clip
+  clff
 
       </a>
     </li>
@@ -367,7 +367,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="thkit" class="md-nav__button md-logo" aria-label="thkit" data-md-component="logo">
       
-  <img src="../_assets/image/logo_clip.svg" alt="logo">
+  <img src="../_assets/image/logo_clff.svg" alt="logo">
 
     </a>
     thkit
@@ -409,14 +409,14 @@
   
   
     <li class="md-nav__item">
-      <a href="http://thangckt.github.io/clip" class="md-nav__link">
+      <a href="http://thangckt.github.io/clff" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    clip
+    clff
   
 
     
@@ -1046,17 +1046,17 @@ That's it! <code>jobman</code> will handle the rest.</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">source</span><span class="w"> </span>/home/tha/app/miniforge/etc/profile.d/conda.sh
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>conda<span class="w"> </span>activate<span class="w"> </span>py13clip
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>conda<span class="w"> </span>activate<span class="w"> </span>py13clff
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>python<span class="w"> </span>above_python_script.py
 </span></code></pre></div>
 <h2 id="case-2-distribute-jobs-to-multiple-remote-machines">Case 2: Distribute jobs to multiple remote machines<a class="headerlink" href="#case-2-distribute-jobs-to-multiple-remote-machines" title="Permanent link">¤</a></h2>
-<p>This is used for specific purpose (e.g., <code>clip</code> package), where the jobs have the same forward_files, backward_files; but the command_list can be different based on computing environment on each remote machine. Just need to:</p>
+<p>This is used for specific purpose (e.g., <code>clff</code> package), where the jobs have the same forward_files, backward_files; but the command_list can be different based on computing environment on each remote machine. Just need to:</p>
 <ul>
 <li>Prepare the <code>task_dirs</code>, where all of them have the same forward_files, backward_files.</li>
 <li>Define a <code>prepare_command_list()</code> function to prepare the command_list for each remote machine.</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman</span><span class="w"> </span><span class="kn">import</span> <span class="n">clip_submit_job_multi_remotes</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.jobman</span><span class="w"> </span><span class="kn">import</span> <span class="n">clff_submit_job_multi_remotes</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thkit.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">loadconfig</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
@@ -1072,7 +1072,7 @@ That's it! <code>jobman</code> will handle the rest.</p>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
 </span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">### Submit to multiple machines</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">clip_submit_job_multi_remotes</span><span class="p">(</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">clff_submit_job_multi_remotes</span><span class="p">(</span>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="n">multi_mdict</span><span class="o">=</span><span class="n">mdict</span><span class="p">,</span>
 </span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        <span class="n">prepare_command_list</span><span class="o">=</span><span class="n">prepare_command_list</span><span class="p">,</span>
 </span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">work_dir</span><span class="o">=</span><span class="n">work_dir</span><span class="p">,</span>

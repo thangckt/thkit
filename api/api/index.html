@@ -2634,7 +2634,7 @@
           <b><code><a class="autorefs autorefs-internal" title="            Config (thkit.config.Config)" href="#thkit.config.Config">Config</a></code></b>
           –
           <div class="doc-md-description">
-            <p>Base class for configuration files.</p>
+            <p>Class for configuration files.</p>
           </div>
         </li>
     </ul>
@@ -2686,10 +2686,14 @@
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="omegaconf.OmegaConf">OmegaConf</span></code></p>
 
 
 
-        <p>Base class for configuration files.</p>
+        <p>Class for configuration files.</p>
+<p>This class inherits from <a href="https://omegaconf.readthedocs.io/">OmegaConf</a> to provide configuration management.
+It includes all functionality of OmegaConf, with added validation capabilities.</p>
 
           
 
@@ -2706,7 +2710,7 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | DictConfig | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -2749,7 +2753,7 @@
 
 
 <h5 id="thkit.config.Config.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="n">DictConfig</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -2772,7 +2776,7 @@
 )
           –
           <div class="doc-md-description">
-            <p>config dictionary. Defaults to None.</p>
+            <p>config dictionary. Support <code>OmegaConf</code> objects. Defaults to None.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
@@ -3843,7 +3847,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
+            <b><code><a class="autorefs autorefs-internal" title="            validate(config_dict: dict | DictConfig | None = None, config_file: str | None = None, schema_dict: dict | None = None, schema_file: str | None = None, allow_unknown: bool = False, require_all: bool = False)
 
   
       staticmethod
@@ -4078,7 +4082,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 
 
 <h6 id="thkit.jobman.helper.ConfigRemoteMachines.validate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">config_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="n">DictConfig</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">allow_unknown</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">require_all</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -4101,7 +4105,7 @@ Nested dicts and sequences (list/tuple/set) are converted recursively.</p>
 )
           –
           <div class="doc-md-description">
-            <p>config dictionary. Defaults to None.</p>
+            <p>config dictionary. Support <code>OmegaConf</code> objects. Defaults to None.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
